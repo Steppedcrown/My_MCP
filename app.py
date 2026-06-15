@@ -113,11 +113,19 @@ async def _run_chat(messages: list, event_q: queue.Queue) -> None:
                     for tc in tool_calls:
                         event_q.put(json.dumps({"type": "tool_use", "name": tc["name"]}))
 
-                    # Add assistant turn (with tool_use blocks) to history
-                    current_messages.append({
-                        "role": "assistant",
-                        "content": [b.model_dump() if hasattr(b, "model_dump") else b for b in response_blocks],
-                    })
+                    # Add assistant turn (with tool_use blocks) to history.
+                    # Build explicit dicts rather than model_dump() to avoid
+                    # extra Pydantic fields that the API rejects on follow-up calls.
+                    assistant_content = []
+                    for b in response_blocks:
+                        btype = getattr(b, "type", None)
+                        if btype == "text":
+                            assistant_content.append({"type": "text", "text": b.text})
+                        elif btype == "tool_use":
+                            assistant_content.append({"type": "tool_use", "id": b.id, "name": b.name, "input": b.input})
+                        elif btype == "thinking":
+                            assistant_content.append({"type": "thinking", "thinking": b.thinking, "signature": getattr(b, "signature", "")})
+                    current_messages.append({"role": "assistant", "content": assistant_content})
 
                     # Execute each tool via the MCP server and collect results
                     tool_results = []
