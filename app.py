@@ -14,14 +14,20 @@ from dotenv import load_dotenv
 import anthropic
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
+import rag
 
 load_dotenv()
 
 app = Flask(__name__)
 async_client = anthropic.AsyncAnthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
 SERVER_SCRIPT = str(Path(__file__).parent / "server.py")
+KNOWLEDGE_FILE = Path(__file__).parent / "knowledge.txt"
 
-SYSTEM_PROMPT = """You are a knowledgeable and friendly theme park assistant. You have access to live queue time data for parks around the world via MCP tools provided by the server.
+# Build the RAG index once at startup
+_knowledge_text = KNOWLEDGE_FILE.read_text(encoding="utf-8") if KNOWLEDGE_FILE.exists() else ""
+_rag_chunks, _rag_embeddings = rag.build_index(_knowledge_text) if _knowledge_text else ([], None)
+
+_BASE_SYSTEM_PROMPT = """You are a knowledgeable and friendly theme park assistant. You have access to live queue time data for parks around the world via MCP tools provided by the server.
 
 ## Guardrails
 
@@ -30,6 +36,15 @@ SYSTEM_PROMPT = """You are a knowledgeable and friendly theme park assistant. Yo
 - **Discovery flow**: When a user mentions a park by name, use the tool that lists parks first to find the correct park ID, then fetch queue times with that ID.
 - **Present data clearly**: Format wait times readably (e.g., "45 minutes", "Closed"). Always mention the last-updated timestamp so users know how fresh the data is.
 - **Be helpful**: Offer practical tips based on the live data — shortest waits, closed rides, best strategy for the day."""
+
+
+def _build_system_prompt(query: str) -> str:
+    """Retrieve the most relevant knowledge chunks for *query* and inject them."""
+    if not _rag_chunks or _rag_embeddings is None:
+        return _BASE_SYSTEM_PROMPT
+    chunks = rag.retrieve(query, _rag_chunks, _rag_embeddings, k=2)
+    context = "\n\n".join(chunks)
+    return f"{_BASE_SYSTEM_PROMPT}\n\n## Relevant Knowledge\n\n{context}"
 
 
 async def _run_chat(messages: list, event_q: queue.Queue) -> None:
@@ -55,6 +70,8 @@ async def _run_chat(messages: list, event_q: queue.Queue) -> None:
                 ]
 
                 current_messages = list(messages)
+                query = next((m["content"] for m in reversed(messages) if m["role"] == "user"), "")
+                system_prompt = _build_system_prompt(query)
 
                 while True:
                     tool_calls = []
@@ -65,7 +82,7 @@ async def _run_chat(messages: list, event_q: queue.Queue) -> None:
                     async with async_client.messages.stream(
                         model="claude-opus-4-8",
                         max_tokens=4096,
-                        system=SYSTEM_PROMPT,
+                        system=system_prompt,
                         tools=anthropic_tools,
                         messages=current_messages,
                     ) as stream:

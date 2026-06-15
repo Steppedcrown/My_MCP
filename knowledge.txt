@@ -1,0 +1,21 @@
+# Queue-Times API — Additional Reference
+
+## Data Freshness
+Queue times are updated approximately every 5 minutes. The `last_updated` field on each ride is a UTC timestamp. If a ride shows `last_updated` more than 15 minutes ago, the park may have stopped sending data for that attraction (often because it's closed for the day or under refurbishment).
+
+## Wait Time Interpretation
+- `wait_time: 0` with `is_open: true` — ride is open with virtually no wait (walk-on).
+- `wait_time: 0` with `is_open: false` — ride is closed (down, end of day, or seasonal).
+- Very high wait times (90+ min) typically indicate a popular ride at peak hours or a limited-capacity experience.
+
+## Park Groups
+Parks are organized into groups (e.g., Disney, Universal, Six Flags). The `list_parks` tool returns the full hierarchy. Each park group has an `id`, `name`, and a `parks` array. Individual park `id` values are what `get_queue_times` expects.
+
+## Lands vs Rides
+`get_queue_times` returns two keys:
+- `lands` — rides grouped by themed area (useful for giving area-based advice).
+- `rides` — a flat list of all rides in the park (useful for sorting by wait time).
+Both contain the same ride data; `lands` just provides extra grouping context.
+
+## Coverage
+Not all parks worldwide are covered. Availability is stronger for major US and European parks. If a user asks about a park not in `list_parks`, let them know it may not be supported yet.
