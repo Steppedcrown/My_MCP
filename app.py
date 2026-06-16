@@ -15,10 +15,12 @@ from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 import MCP.rag as rag
 
-_env = dotenv_values(Path(__file__).parent / ".env")
+import os
+from dotenv import load_dotenv
+load_dotenv(Path(__file__).parent / ".env")
 
 app = Flask(__name__)
-async_client = anthropic.AsyncAnthropic(api_key=_env["ANTHROPIC_API_KEY"])
+async_client = anthropic.AsyncAnthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 SERVER_SCRIPT = str(Path(__file__).parent / "MCP" / "server.py")
 KNOWLEDGE_FILE = Path(__file__).parent / "MCP" / "knowledge.txt"
 
@@ -200,4 +202,4 @@ def chat():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    app.run(host="0.0.0.0", port=5000)
