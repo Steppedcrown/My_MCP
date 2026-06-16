@@ -1,21 +1,52 @@
-# Queue-Times API — Additional Reference
+## Elden Ring — Shadow of the Erdtree DLC Bosses
 
-## Data Freshness
-Queue times are updated approximately every 5 minutes. The `last_updated` field on each ride is a UTC timestamp. If a ride shows `last_updated` more than 15 minutes ago, the park may have stopped sending data for that attraction (often because it's closed for the day or under refurbishment).
+### General Tips
+Shadow of the Erdtree bosses are significantly harder than base-game bosses. Collect Scadutree Fragments (found throughout the Shadow Realm) to raise your Scadutree Blessing level — this is the primary way to increase your damage and damage absorption against DLC enemies. Aim for at least blessing level 15–20 before attempting late-game bosses.
 
-## Wait Time Interpretation
-- `wait_time: 0` with `is_open: true` — ride is open with virtually no wait (walk-on).
-- `wait_time: 0` with `is_open: false` — ride is closed (down, end of day, or seasonal).
-- Very high wait times (90+ min) typically indicate a popular ride at peak hours or a limited-capacity experience.
+## Boss Strategies
 
-## Park Groups
-Parks are organized into groups (e.g., Disney, Universal, Six Flags). The `list_parks` tool returns the full hierarchy. Each park group has an `id`, `name`, and a `parks` array. Individual park `id` values are what `get_queue_times` expects.
+### Divine Beast Dancing Lion (Belurat)
+**Runes:** 120,000 | **ID:** 1
+The first major boss of the DLC. Fights in two phases: the first phase focuses on lightning and wind attacks; the second phase adds snowstorm and frost. 
+- Stay beneath it during lightning attacks to avoid the vertical strikes.
+- The spinning wind attack can be dodged by rolling into the rotation.
+- Stockpile Preserving Boluses to counter frostbite buildup in phase two.
+- Recommended Scadutree Blessing: 2–5.
 
-## Lands vs Rides
-`get_queue_times` returns two keys:
-- `lands` — rides grouped by themed area (useful for giving area-based advice).
-- `rides` — a flat list of all rides in the park (useful for sorting by wait time).
-Both contain the same ride data; `lands` just provides extra grouping context.
+### Rellana, Twin Moon Knight
+**Runes:** 240,000 | **ID:** 2
+A fast, aggressive duelist who wields both flame and moonlight swords. One of the earlier "wall" bosses that punishes passive play.
+- She chains combos aggressively — learn which attacks have openings after the last hit.
+- Her moonlight wave projectiles travel slowly; sidestep rather than roll through them.
+- High fire and magic resistance helps. Lightning is her weakness.
+- Recommended Scadutree Blessing: 5–8.
 
-## Coverage
-Not all parks worldwide are covered. Availability is stronger for major US and European parks. If a user asks about a park not in `list_parks`, let them know it may not be supported yet.
+### Messmer the Impaler
+**Runes:** 400,000 | **ID:** 3
+A mid-to-late DLC boss and a story centrepiece. Wields a spear and fire snake magic.
+- Phase one: punish the end of his spear combos with counter-attacks. His grab attack is telegraphed by him extending his arm — roll away immediately.
+- Phase two: he gains flame snake extensions on his attacks. Roll through the flame, not away from it.
+- High fire resistance (Flamedrake Talisman, Fire Resist armour) dramatically reduces his damage.
+- Recommended Scadutree Blessing: 12–15.
+
+### Metyr, Mother of Fingers
+**Runes:** 420,000 | **ID:** 4
+A late-game cosmic horror boss. Deals gravity and holy damage with wide sweeping attacks.
+- Her beam attacks have clear wind-up animations — bait them and punish after.
+- Stay close during most of her attacks; her ranged options are more dangerous than her melee.
+- Holy damage negation (Haligdrake Talisman) is very effective here.
+- Recommended Scadutree Blessing: 15–18.
+
+### Putrescent Knight
+**Runes:** 220,000 | **ID:** 5
+A spectral knight atop a decayed horse. Deals fire and sleep damage; a major sleep proc can end the fight early if you're unprepared.
+- Keep Clarifying Boluses on hand to cure sleep buildup.
+- The horse charges are the most dangerous attack — dodge to the side, not backward.
+- After the charge, the knight is briefly vulnerable — this is your main damage window.
+- Recommended Scadutree Blessing: 8–12.
+
+## General Combat Advice
+- **Scadutree Fragments** are the single most important upgrade — prioritise finding them over rushing bosses.
+- **Positioning:** Most DLC bosses punish passive backpedalling. Play aggressively and stay mid-range to bait attacks.
+- **Summons:** Spirit Ash summons (especially Mimic Tear or Black Knife Tiche) remain effective in the DLC. Don't hesitate to use them.
+- **Rune farming:** The boss rune rewards are substantial — if stuck, clearing easier areas and levelling up is always a valid strategy.

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Theme Park Queue Assistant</title>
+  <title>Elden Ring Assistant</title>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -208,20 +208,20 @@
 
 <header>
   <div class="title">
-    <h1>Theme Park Queue Assistant</h1>
-    <p>Live wait times powered by Claude &amp; Queue-Times.com</p>
+    <h1>Elden Ring Assistant</h1>
+    <p>Boss strategies &amp; lore powered by Claude</p>
   </div>
   <button id="clear-btn">New Chat</button>
 </header>
 
 <div class="messages" id="messages">
   <div class="msg assistant">
-    <div class="bubble">Hi! I can check live ride wait times for theme parks around the world. Which park are you visiting, or would you like to see what parks are available?</div>
+    <div class="bubble">Greetings, Tarnished. I can help you with Elden Ring boss strategies, lore, and rune rewards — especially from the Shadow of the Erdtree DLC. Which boss are you up against?</div>
   </div>
 </div>
 
 <div class="input-area">
-  <textarea id="input" placeholder="Ask about a theme park..." rows="1"></textarea>
+  <textarea id="input" placeholder="Ask about a boss, build, or lore..." rows="1"></textarea>
   <button id="send-btn" title="Send (Enter)">
     <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
   </button>
@@ -260,7 +260,7 @@
     history = [];
     messagesEl.innerHTML = `
       <div class="msg assistant">
-        <div class="bubble">Hi! I can check live ride wait times for theme parks around the world. Which park are you visiting, or would you like to see what parks are available?</div>
+        <div class="bubble">Greetings, Tarnished. I can help you with Elden Ring boss strategies, lore, and rune rewards — especially from the Shadow of the Erdtree DLC. Which boss are you up against?</div>
       </div>`;
   });
 
