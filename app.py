@@ -48,11 +48,21 @@ def _build_system_prompt(query: str) -> str:
     return f"{_BASE_SYSTEM_PROMPT}\n\n## Relevant Knowledge\n\n{context}"
 
 
+def _subprocess_env() -> dict:
+    """Build an env dict that includes .pythonlibs so the MCP subprocess can find packages."""
+    env = os.environ.copy()
+    pythonlibs = str(Path(__file__).parent / ".pythonlibs" / "lib" / "python3.12" / "site-packages")
+    existing = env.get("PYTHONPATH", "")
+    env["PYTHONPATH"] = f"{pythonlibs}:{existing}" if existing else pythonlibs
+    return env
+
+
 async def _run_chat(messages: list, event_q: queue.Queue) -> None:
     """Full agentic loop: spawns server.py via stdio, discovers tools, calls Claude, handles tool use."""
     server_params = StdioServerParameters(
         command=sys.executable,
         args=[SERVER_SCRIPT],
+        env=_subprocess_env(),
     )
     try:
         async with stdio_client(server_params) as (read, write):
