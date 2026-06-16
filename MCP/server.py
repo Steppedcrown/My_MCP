@@ -1,7 +1,7 @@
 # Test with: npx @modelcontextprotocol/inspector python server.py
 
-import httpx  # type: ignore
-from mcp.server.fastmcp import FastMCP  # type: ignore
+import httpx
+from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP("claude-mcp")
 _queue_times_base = "https://queue-times.com"
