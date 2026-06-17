@@ -2,6 +2,9 @@
 
 An AI-powered chatbot that acts as a knowledgeable Elden Ring player. Ask it about boss strategies, lore, rune rewards, and Shadow of the Erdtree content. It uses Claude (via the Anthropic API) combined with the Model Context Protocol (MCP) to look up live boss data from a local REST API backed by PostgreSQL.
 
+**Live demo:** https://ai-agent--AidenThomas3.replit.app
+> The app is password protected. Reach out if you'd like access and I'll send you the password.
+
 ---
 
 ## What it does
