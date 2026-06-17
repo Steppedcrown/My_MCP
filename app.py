@@ -6,6 +6,7 @@ import json
 import queue
 import sys
 import threading
+import time
 from pathlib import Path
 
 from flask import Flask, render_template, request, Response, stream_with_context
@@ -73,6 +74,8 @@ _rag_embeddings = None
 
 def _build_rag_index() -> None:
     global _rag_chunks, _rag_embeddings
+    # Delay heavy CPU work so gunicorn can pass the initial healthcheck first.
+    time.sleep(30)
     knowledge_text = KNOWLEDGE_FILE.read_text(encoding="utf-8") if KNOWLEDGE_FILE.exists() else ""
     if knowledge_text:
         _rag_chunks, _rag_embeddings = rag.build_index(knowledge_text)
