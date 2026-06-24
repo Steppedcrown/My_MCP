@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Demi-Human Swordsman Yosh",
+    "description": "Spirit of a demi-human swordsman who once roamed the Gravesite Plain. Yosh wields a curved sword with surprising ferocity, harrying enemies with relentless slashing attacks. Though small in stature, his aggression makes him a persistent distraction in battle.",
+    "fp_cost": 85,
+    "hp_cost": null,
+    "boss_id": null,
+    "location_id": 1,
+    "dungeon_id": null,
+    "npc_id": null
+  },
+  {
+    "id": 2,
+    "title": "Fire Knight Hilde",
+    "description": "Spirit of a Fire Knight who served under Messmer's legions in the Land of Shadow. Hilde wields a greatspear wreathed in flames and charges foes with disciplined aggression, embodying the martial ferocity of Messmer's devoted warriors.",
+    "fp_cost": 112,
+    "hp_cost": null,
+    "boss_id": null,
+    "location_id": null,
+    "dungeon_id": 3,
+    "npc_id": null
+  },
+  {
+    "id": 3,
+    "title": "Horned Warrior",
+    "description": "Spirit of an ancient warrior of the Hornsent people, adorned with great curved horns. Bears a massive stone club and moves with slow but devastating force. These warriors were among the original inhabitants of the Land of Shadow before Marika's conquest.",
+    "fp_cost": 98,
+    "hp_cost": null,
+    "boss_id": null,
+    "location_id": 2,
+    "dungeon_id": null,
+    "npc_id": null
+  },
+  {
+    "id": 4,
+    "title": "Solitary Furnace Golem",
+    "description": "Spirit of a lesser furnace golem that once stood sentinel in the ruined forges of the Land of Shadow. It launches volleys of flame from its torso cavity and stomps foes beneath enormous iron feet. A stalwart summon that draws enemy attention with its imposing size.",
+    "fp_cost": 127,
+    "hp_cost": null,
+    "boss_id": null,
+    "location_id": null,
+    "dungeon_id": 6,
+    "npc_id": null
+  },
+  {
+    "id": 5,
+    "title": "Taylew the Golem Smith",
+    "description": "Spirit of Taylew, a golem craftsman of immense skill who once labored in the forges beneath the Land of Shadow. He wields heavy smithing tools as weapons, dealing crushing blows to enemies while retaining a craftsman's deliberate precision in every strike.",
+    "fp_cost": 118,
+    "hp_cost": null,
+    "boss_id": null,
+    "location_id": null,
+    "dungeon_id": 4,
+    "npc_id": null
+  },
+  {
+    "id": 6,
+    "title": "Leda the Needle Knight",
+    "description": "Spirit of Needle Knight Leda, loyal sword-bearer of Miquella who journeyed into the Land of Shadow in devotion to her lord. She fights with elegant, precise thrusts of her needle-like blade, moving swiftly across the battlefield to skewer foes with piercing attacks.",
+    "fp_cost": 132,
+    "hp_cost": null,
+    "boss_id": null,
+    "location_id": null,
+    "dungeon_id": 9,
+    "npc_id": null
+  }
+]

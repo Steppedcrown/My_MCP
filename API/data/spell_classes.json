@@ -1,0 +1,34 @@
+[
+  {
+    "spell_id": 1,
+    "class_id": 15
+  },
+  {
+    "spell_id": 2,
+    "class_id": 15
+  },
+  {
+    "spell_id": 3,
+    "class_id": 14
+  },
+  {
+    "spell_id": 4,
+    "class_id": 15
+  },
+  {
+    "spell_id": 5,
+    "class_id": 15
+  },
+  {
+    "spell_id": 6,
+    "class_id": 15
+  },
+  {
+    "spell_id": 7,
+    "class_id": 15
+  },
+  {
+    "spell_id": 8,
+    "class_id": 15
+  }
+]

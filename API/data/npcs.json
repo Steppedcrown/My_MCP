@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Needle Knight Leda",
+    "quest_description": "A devoted follower of Miquella who journeyed into the Land of Shadow in service to her lord. Leda leads the group of pilgrims who followed Miquella's trail, but grows increasingly suspicious of the other followers as Miquella's true intentions are revealed. She will turn on those she deems unworthy of following Miquella and must be confronted as allegiances fracture among the pilgrims.",
+    "initial_location_id": 1
+  },
+  {
+    "id": 2,
+    "title": "Hornsent",
+    "quest_description": "A descendant of the horned people who were subjugated and sacrificed by Marika to forge the Erdtree. He bears deep hatred for Marika and all she represents, yet follows Miquella seeking vengeance and perhaps redemption. His quest intersects with the player's journey through the ruins of his people's civilization, and his fate is shaped by the choices made among Miquella's followers.",
+    "initial_location_id": 1
+  },
+  {
+    "id": 3,
+    "title": "Thiollier",
+    "quest_description": "A devoted worshipper of St. Trina, the sleepful maiden, who followed Miquella into the Land of Shadow out of devotion to her somnolent aspect. Thiollier seeks an audience with St. Trina and will go to extraordinary lengths to serve her, even drinking a poisonous elixir at her request. His questline culminates in tragedy as his devotion is tested to its absolute limit.",
+    "initial_location_id": 1
+  },
+  {
+    "id": 4,
+    "title": "Moore",
+    "quest_description": "A jovial and somewhat naive follower of Miquella who wears a distinctive jar upon his head. Moore is among the pilgrims who crossed into the Land of Shadow following Miquella's grace. He maintains a cheerful and trusting disposition despite the dangers surrounding him, and his questline involves navigating the perilous conflicts that erupt among the pilgrims.",
+    "initial_location_id": 2
+  },
+  {
+    "id": 5,
+    "title": "Sir Ansbach",
+    "quest_description": "A former servant of Mohg, Lord of Blood, who followed Miquella into the Land of Shadow after Miquella used Mohg's corpse as a vessel for his journey. Ansbach harbors complex feelings about Miquella's actions and seeks to understand the truth of his lord's fate. He is a skilled warrior and scholar who provides the player with crucial lore about Miquella's true nature and motivations.",
+    "initial_location_id": 3
+  },
+  {
+    "id": 6,
+    "title": "Commander Freyja",
+    "quest_description": "A stalwart commander and knight who serves as one of Miquella's most loyal and capable followers. Freyja is a seasoned warrior who accompanies the player through the Land of Shadow, offering aid in battle and counsel along the way. Her unwavering dedication to Miquella is tested as the pilgrim's true purpose becomes clear, and she must decide where her loyalties ultimately lie.",
+    "initial_location_id": 2
+  },
+  {
+    "id": 7,
+    "title": "Dryleaf Dane",
+    "quest_description": "A wandering monk and unarmed martial artist who follows Miquella's trail into the Land of Shadow. Dane fights exclusively with his body, wielding a powerful dryleaf fighting style that channels spiritual strength through bare hands and feet. He is a quiet and introspective figure whose questline explores his path as a combatant devoted to a fighting tradition honed across long years of wandering.",
+    "initial_location_id": 1
+  },
+  {
+    "id": 8,
+    "title": "Igon",
+    "quest_description": "A fierce and half-mad warrior consumed entirely by his obsessive hatred of Bayle the Dread, a powerful dragon who devastated his people. Igon survived a catastrophic encounter with Bayle and has since dedicated every moment of his existence to hunting the dragon down. He enlists the player's help to confront Bayle atop the Jagged Peak, roaring war cries with terrifying intensity throughout the battle.",
+    "initial_location_id": 7
+  }
+]

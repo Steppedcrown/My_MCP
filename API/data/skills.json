@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "title": "Wing Stance",
+    "description": "Ash of War learned from the Divine Beast Dancing Lion. Take a low stance with arms spread wide like the wings of the divine beast. Follow up with a light attack to unleash a flurry of slashing strikes, or a heavy attack to perform a powerful spinning slash.",
+    "fp_cost": 14,
+    "remembrance_id": 1,
+    "boss_id": null,
+    "location_id": null,
+    "dungeon_id": null,
+    "npc_id": null
+  },
+  {
+    "id": 2,
+    "title": "Swift Slash",
+    "description": "Ash of War associated with the twin blades of Rellana, Knight of the Twin Moons. Dash forward with blinding speed and deliver a rapid succession of cuts, leaving trails of moonlight in the wake of each strike.",
+    "fp_cost": 18,
+    "remembrance_id": 2,
+    "boss_id": null,
+    "location_id": null,
+    "dungeon_id": null,
+    "npc_id": null
+  },
+  {
+    "id": 3,
+    "title": "Fire Serpent",
+    "description": "Ash of War born of Messmer's impaling flame. Thrust the weapon into the ground to conjure a serpent of raging fire that surges forward along the earth, burning all in its path with the cruel heat of Messmer's ancient power.",
+    "fp_cost": 22,
+    "remembrance_id": 3,
+    "boss_id": null,
+    "location_id": null,
+    "dungeon_id": null,
+    "npc_id": null
+  },
+  {
+    "id": 4,
+    "title": "Dryleaf Whirlwind",
+    "description": "Ash of War taught by Dryleaf Dane, a wandering warrior who mastered unarmed combat. Spin the body in a fierce whirlwind of kicks and open-palm strikes, launching nearby enemies with the accumulated force of the rotation.",
+    "fp_cost": 12,
+    "remembrance_id": null,
+    "boss_id": null,
+    "location_id": null,
+    "dungeon_id": null,
+    "npc_id": 7
+  },
+  {
+    "id": 5,
+    "title": "Palm Blast",
+    "description": "Ash of War derived from the fighting style of Dryleaf Dane. Channel force into the open palm and release it in a concentrated burst, sending a wave of impact that staggers foes and can be chained into follow-up strikes.",
+    "fp_cost": 10,
+    "remembrance_id": null,
+    "boss_id": null,
+    "location_id": null,
+    "dungeon_id": null,
+    "npc_id": 7
+  },
+  {
+    "id": 6,
+    "title": "Savage Lion's Claw",
+    "description": "A ferocious variant of the Lion's Claw technique found within the depths of Shadow Keep. Leap high into the air and descend with a rolling somersault strike that delivers a savage claw blow with tremendous impact upon landing.",
+    "fp_cost": 20,
+    "remembrance_id": null,
+    "boss_id": null,
+    "location_id": null,
+    "dungeon_id": 3,
+    "npc_id": null
+  },
+  {
+    "id": 7,
+    "title": "Igon's Drake Hunt",
+    "description": "Ash of War born of Igon's undying hatred for Bayle the Dread. Let out a furious battle cry that briefly empowers the next attack, then deliver a leaping overhead strike aimed at felling the mightiest of drakes.",
+    "fp_cost": 16,
+    "remembrance_id": null,
+    "boss_id": null,
+    "location_id": 7,
+    "dungeon_id": null,
+    "npc_id": null
+  },
+  {
+    "id": 8,
+    "title": "Ghostflame Call",
+    "description": "Ash of War imbued with the deathly ghostflame of the Jagged Peak. Drag the weapon along the ground to ignite it with pale ghostflame, then release a wide sweeping strike that leaves a lingering trail of ghostly fire upon the earth.",
+    "fp_cost": 24,
+    "remembrance_id": null,
+    "boss_id": 14,
+    "location_id": null,
+    "dungeon_id": null,
+    "npc_id": null
+  }
+]

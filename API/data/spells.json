@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Messmer's Orb",
+    "description": "Incantation of Messmer the Impaler, commander of the shadow army. Hurls an orb of spiraling fire that tracks foes before detonating in a burst of Messmer's flame. The fire of Messmer, born of serpentine lineage, differs in nature from the fundamentally golden light of the Erdtree.",
+    "remembrance_id": 3,
+    "boss_id": null,
+    "location_id": null,
+    "dungeon_id": null,
+    "npc_id": null
+  },
+  {
+    "id": 2,
+    "title": "Midra's Flame of Frenzy",
+    "description": "Incantation of Midra, Lord of Frenzied Flame, who surrendered his flesh and mind to the chaos of the frenzied flame. Channels a concentrated torrent of yellow frenzied flame from the eyes, burning all in its path. Midra, once a gentle lord, was broken utterly by the flame that now defines him.",
+    "remembrance_id": 6,
+    "boss_id": null,
+    "location_id": null,
+    "dungeon_id": null,
+    "npc_id": null
+  },
+  {
+    "id": 3,
+    "title": "Rellana's Twin Moons",
+    "description": "Sorcery of Rellana, Twin Moon Knight and wielder of both cold and fire moonlight. Conjures two great magical moons, one of cold azure and one of blazing crimson, before launching them simultaneously at foes. Rellana served Messmer in the Land of Shadow, her twin affinities a testament to her rare and fearsome mastery.",
+    "remembrance_id": 2,
+    "boss_id": null,
+    "location_id": null,
+    "dungeon_id": null,
+    "npc_id": null
+  },
+  {
+    "id": 4,
+    "title": "Dragonbolt of Florissax",
+    "description": "Incantation of Dragon Communion taught by Florissax, the dragon priestess found on Jagged Peak. Channels the power of ancient dragonlords to cloak the caster in crackling lightning, greatly boosting lightning attack and defence. Florissax learned this prayer from Bayle's kin before the great dragon's ruinous betrayal of his own kind.",
+    "remembrance_id": null,
+    "boss_id": null,
+    "location_id": null,
+    "dungeon_id": null,
+    "npc_id": null
+  },
+  {
+    "id": 5,
+    "title": "Land of Shadow",
+    "description": "Ancient incantation originating from the Land of Shadow itself, the realm hidden beneath the Erdtree's light. Calls down a concentrated beam of holy shadow light from above to smite a targeted area. This power predates the Golden Order and speaks to a forgotten age when shadow and light were held in balance.",
+    "remembrance_id": null,
+    "boss_id": null,
+    "location_id": null,
+    "dungeon_id": null,
+    "npc_id": null
+  },
+  {
+    "id": 6,
+    "title": "Bayle's Tyranny",
+    "description": "Incantation drawn from the Remembrance of the Dragonlord, embodying the savage dominion of Bayle the Dread. Summons Bayle's overwhelming dragonfire in a massive eruption beneath a targeted point. Bayle, feared even among ancient dragons, turned against his own kind and carved out his brutal reign atop the Jagged Peak.",
+    "remembrance_id": 7,
+    "boss_id": null,
+    "location_id": null,
+    "dungeon_id": null,
+    "npc_id": null
+  },
+  {
+    "id": 7,
+    "title": "Romina's Blossom",
+    "description": "Incantation born from the Remembrance of the Saint of the Bud. Romina, Saint of the Bud, was a mighty consort of Messmer who became host to the scarlet rot brought from Caelid. This spell scatters a burst of rot-laden blossoms from the caster that bloom on contact with foes, inflicting heavy scarlet rot buildup.",
+    "remembrance_id": 5,
+    "boss_id": null,
+    "location_id": null,
+    "dungeon_id": null,
+    "npc_id": null
+  },
+  {
+    "id": 8,
+    "title": "Divine Beast Tornado",
+    "description": "Incantation of the Divine Beast Dancing Lion, avatar of storm and ice worshipped in the ancient Land of Shadow. Summons a swirling tempest around the caster that launches nearby foes skyward before scattering them with a thunderous gust. The Dancing Lion embodies the ferocity of nature that predates the Erdtree's dominion.",
+    "remembrance_id": 1,
+    "boss_id": null,
+    "location_id": null,
+    "dungeon_id": null,
+    "npc_id": null
+  }
+]

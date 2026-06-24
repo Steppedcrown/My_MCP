@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "class_name": "Greatsword"
+  },
+  {
+    "id": 2,
+    "class_name": "Katana"
+  },
+  {
+    "id": 3,
+    "class_name": "Light Greatsword"
+  },
+  {
+    "id": 4,
+    "class_name": "Backhand Blade"
+  },
+  {
+    "id": 5,
+    "class_name": "Great Katana"
+  },
+  {
+    "id": 6,
+    "class_name": "Thrusting Shield"
+  },
+  {
+    "id": 7,
+    "class_name": "Beast Claw"
+  },
+  {
+    "id": 8,
+    "class_name": "Throwing Blade"
+  },
+  {
+    "id": 9,
+    "class_name": "Perfume Bottle"
+  },
+  {
+    "id": 10,
+    "class_name": "Hand-to-Hand Arts"
+  },
+  {
+    "id": 11,
+    "class_name": "Colossal Sword"
+  },
+  {
+    "id": 12,
+    "class_name": "Curved Sword"
+  },
+  {
+    "id": 13,
+    "class_name": "Straight Sword"
+  },
+  {
+    "id": 14,
+    "class_name": "Staff"
+  },
+  {
+    "id": 15,
+    "class_name": "Seal"
+  }
+]

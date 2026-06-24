@@ -22,12 +22,13 @@ from pathlib import Path
 from dotenv import load_dotenv
 import anthropic
 
-load_dotenv(Path(__file__).parent / ".env")
+load_dotenv(Path(__file__).parent / ".env", override=True)
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 
 DATA_DIR = Path(__file__).parent / "API" / "data"
 SCHEMA_PATH = Path(__file__).parent / "API" / "schema.sql"
 
-client = anthropic.Anthropic()
+client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 MODEL = "claude-sonnet-4-6"
 
 # ---------------------------------------------------------------------------
@@ -354,6 +355,27 @@ JUNCTION_TABLES = [
 ]
 
 
+def parse_json(text: str):
+    """Extract and parse JSON from an LLM response that may contain extra text."""
+    text = text.strip()
+    if text.startswith("```"):
+        text = text.split("\n", 1)[1]
+        text = text.rsplit("```", 1)[0].strip()
+    # Find the first [ or { and match to its closing counterpart
+    for i, ch in enumerate(text):
+        if ch in ("[", "{"):
+            close = "]" if ch == "[" else "}"
+            depth = 0
+            for j in range(i, len(text)):
+                if text[j] == ch:
+                    depth += 1
+                elif text[j] == close:
+                    depth -= 1
+                if depth == 0:
+                    return json.loads(text[i : j + 1])
+    return json.loads(text)
+
+
 def load_existing_data() -> dict[str, list[dict]]:
     """Load all previously generated JSON data files."""
     data = {}
@@ -414,12 +436,7 @@ Return the JSON array:"""
     )
 
     text = next(b.text for b in response.content if b.type == "text")
-    text = text.strip()
-    if text.startswith("```"):
-        text = text.split("\n", 1)[1]
-        text = text.rsplit("```", 1)[0]
-
-    return json.loads(text)
+    return parse_json(text)
 
 
 def validate_data(
@@ -465,12 +482,7 @@ Return ONLY the JSON object:"""
     )
 
     text = next(b.text for b in response.content if b.type == "text")
-    text = text.strip()
-    if text.startswith("```"):
-        text = text.split("\n", 1)[1]
-        text = text.rsplit("```", 1)[0]
-
-    return json.loads(text)
+    return parse_json(text)
 
 
 def save_data(table: dict, data: list[dict]) -> None:

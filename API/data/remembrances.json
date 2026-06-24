@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "boss_id": 1,
+    "title": "Remembrance of the Dancing Lion",
+    "description": "Remembrance of the Divine Beast Dancing Lion, slain by the Tarnished. The divine beast, a sacred mask worn by devoted warriors of Messmer's campaign, danced with the storm and commanded the ancient elements. Its power can be unlocked by the Finger Reader.",
+    "runes": 50000
+  },
+  {
+    "id": 2,
+    "boss_id": 2,
+    "title": "Remembrance of the Twin Moon Knight",
+    "description": "Remembrance of Rellana, Twin Moon Knight, slain by the Tarnished. Rellana, a knight of the moon who had mastered both sorcery and incantation, wielded twin swords suffused with the light of two moons. She was kin to Rennala, Queen of the Full Moon. Its power can be unlocked by the Finger Reader.",
+    "runes": 50000
+  },
+  {
+    "id": 3,
+    "boss_id": 3,
+    "title": "Remembrance of the Impaler",
+    "description": "Remembrance of Messmer the Impaler, slain by the Tarnished. Messmer, a child of Marika hidden away in the Land of Shadow, wielded a serpent-entwined spear and commanded flame of a terrible, consuming nature. He kept the shadow of the Erdtree and its secrets sealed away by order of his mother. Its power can be unlocked by the Finger Reader.",
+    "runes": 50000
+  },
+  {
+    "id": 4,
+    "boss_id": 4,
+    "title": "Remembrance of the Mother of Fingers",
+    "description": "Remembrance of Metyr, Mother of Fingers, slain by the Tarnished. Metyr was the first of the Fingercreepers to receive the guidance of the Greater Will, a celestial being who birthed the fingers that would come to communicate the will of the outer gods. Its power can be unlocked by the Finger Reader.",
+    "runes": 50000
+  },
+  {
+    "id": 5,
+    "boss_id": 6,
+    "title": "Remembrance of the Saint of the Bud",
+    "description": "Remembrance of Romina, Saint of the Bud, slain by the Tarnished. Romina was a scarlet saint who had taken the bud of the rot into herself, her body host to the Aeonian bloom. She was a devout follower of the Scarlet Rot and guarded the path to the church where Messmer performed his rites. Its power can be unlocked by the Finger Reader.",
+    "runes": 50000
+  },
+  {
+    "id": 6,
+    "boss_id": 9,
+    "title": "Remembrance of the Lord of Frenzied Flame",
+    "description": "Remembrance of Midra, Lord of Frenzied Flame, slain by the Tarnished. Midra was a scholar who sought to understand the frenzied flame and was ultimately consumed by it, becoming a vessel for the chaos flame itself. His anguish burned away all reason, leaving only the spreading blaze of the yellow flame. Its power can be unlocked by the Finger Reader.",
+    "runes": 50000
+  },
+  {
+    "id": 7,
+    "boss_id": 10,
+    "title": "Remembrance of the Dragonlord",
+    "description": "Remembrance of Bayle the Dread, slain by the Tarnished. Bayle was a fearsome dragon of singular cruelty and power who had torn away his own horns in rejection of the ancient dragon accord. He terrorized the Land of Shadow from the peak of the jagged peaks, and was said to be so terrible that even the great Igon hunted him relentlessly. Its power can be unlocked by the Finger Reader.",
+    "runes": 50000
+  },
+  {
+    "id": 8,
+    "boss_id": 11,
+    "title": "Remembrance of the Promised Consort",
+    "description": "Remembrance of Radahn, Promised Consort, slain by the Tarnished. Radahn, once known as the Starscourge, was reborn as the promised consort of Miquella after his soul was drawn into a new vessel. United with Miquella's boundless love and power, he became something greater and more terrible than either had been alone, a god-like union at the foot of the Erdtree's shadow. Its power can be unlocked by the Finger Reader.",
+    "runes": 50000
+  }
+]

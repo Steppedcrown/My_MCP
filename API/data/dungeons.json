@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Belurat Tower Settlement",
+    "location_id": 1,
+    "is_legacy": true,
+    "boss_id": 1
+  },
+  {
+    "id": 2,
+    "title": "Castle Ensis",
+    "location_id": 1,
+    "is_legacy": true,
+    "boss_id": 2
+  },
+  {
+    "id": 3,
+    "title": "Shadow Keep",
+    "location_id": 3,
+    "is_legacy": true,
+    "boss_id": 3
+  },
+  {
+    "id": 4,
+    "title": "Specimen Storehouse",
+    "location_id": 3,
+    "is_legacy": false,
+    "boss_id": 12
+  },
+  {
+    "id": 5,
+    "title": "Stone Coffin Fissure",
+    "location_id": 6,
+    "is_legacy": false,
+    "boss_id": 5
+  },
+  {
+    "id": 6,
+    "title": "Ruined Forge Lava Intake",
+    "location_id": 2,
+    "is_legacy": false,
+    "boss_id": null
+  },
+  {
+    "id": 7,
+    "title": "Darklight Catacombs",
+    "location_id": 8,
+    "is_legacy": false,
+    "boss_id": 13
+  },
+  {
+    "id": 8,
+    "title": "Fog Rift Catacombs",
+    "location_id": 9,
+    "is_legacy": false,
+    "boss_id": 15
+  },
+  {
+    "id": 9,
+    "title": "Enir-Ilim",
+    "location_id": 10,
+    "is_legacy": true,
+    "boss_id": 11
+  },
+  {
+    "id": 10,
+    "title": "Jagged Peak",
+    "location_id": 7,
+    "is_legacy": false,
+    "boss_id": 10
+  }
+]

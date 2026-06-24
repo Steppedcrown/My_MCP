@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Scadutree Fragment",
+    "description": "Fragment of a withered golden leaf from the Scadutree, the great shadow tree of the Land of Shadow. Boosts attack and damage negation within the Land of Shadow when used at a Site of Grace. The Scadutree once flourished under the Erdtree's light, and its fragments carry remnants of that blessing.",
+    "fp_cost": 0,
+    "remembrance_id": null,
+    "boss_id": null,
+    "location_id": 1,
+    "dungeon_id": null,
+    "npc_id": null
+  },
+  {
+    "id": 2,
+    "title": "Revered Spirit Ash",
+    "description": "Ash gathered from revered sites within the Land of Shadow. Strengthens spirit ash summons when used at a Site of Grace, bolstering the power of spirits called forth in battle. These ashes carry the lingering reverence of those who once honored the forgotten gods of the shadow realm.",
+    "fp_cost": 0,
+    "remembrance_id": null,
+    "boss_id": null,
+    "location_id": 2,
+    "dungeon_id": null,
+    "npc_id": null
+  },
+  {
+    "id": 3,
+    "title": "Iris of Grace",
+    "description": "A pale, luminous iris flower that blooms only in the Land of Shadow. When used, it restores a lost rune arc effect, returning the blessing of a Great Rune without the need to use another rune arc. Its petals shimmer with a gentle grace, as though touched by a forgotten divine light.",
+    "fp_cost": 0,
+    "remembrance_id": null,
+    "boss_id": null,
+    "location_id": 6,
+    "dungeon_id": null,
+    "npc_id": null
+  },
+  {
+    "id": 4,
+    "title": "Iris of Occultation",
+    "description": "A dark, withered iris flower suffused with shadow. When used, it nullifies the effect of a currently active Great Rune, extinguishing the blessing it provides. Said to have bloomed in the shadow cast by the Erdtree's light, where grace could not reach.",
+    "fp_cost": 0,
+    "remembrance_id": null,
+    "boss_id": null,
+    "location_id": 8,
+    "dungeon_id": null,
+    "npc_id": null
+  },
+  {
+    "id": 5,
+    "title": "Aged One's Exultation",
+    "description": "A peculiar talisman carved from ancient bone, fashioned in reverence of the Aged One who lurks beneath the Land of Shadow. When equipped, it raises attack power whenever a new status effect is inflicted nearby, as the Aged One delights in suffering and affliction visited upon the world.",
+    "fp_cost": 0,
+    "remembrance_id": null,
+    "boss_id": null,
+    "location_id": 7,
+    "dungeon_id": null,
+    "npc_id": null
+  },
+  {
+    "id": 6,
+    "title": "Thiollier's Concoction",
+    "description": "A potent concoction brewed by Thiollier, a devoted follower of St. Trina who journeyed into the Land of Shadow. Drinking it inflicts sleep on the user while restoring HP to nearby allies. Thiollier crafted this draught in devotion, blending soporific herbs in hopes of drawing closer to St. Trina's slumbering grace.",
+    "fp_cost": 0,
+    "remembrance_id": null,
+    "boss_id": null,
+    "location_id": null,
+    "dungeon_id": null,
+    "npc_id": 3
+  }
+]
