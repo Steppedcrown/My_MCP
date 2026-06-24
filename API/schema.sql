@@ -1,5 +1,7 @@
 -- Elden Ring database schema
 -- Tables are ordered to satisfy foreign key dependencies.
+-- Safe to re-run: all CREATE TABLE use IF NOT EXISTS,
+-- all ADD CONSTRAINT statements are guarded via DO blocks.
 
 CREATE TABLE IF NOT EXISTS "elden_ring" (
     "id"           INTEGER      NOT NULL,
@@ -86,7 +88,7 @@ CREATE TABLE IF NOT EXISTS "spell" (
     PRIMARY KEY ("id")
 );
 
--- weapon_class must exist before spell_class (FK dependency)
+-- weapon_class must be created before spell_class (FK dependency)
 CREATE TABLE IF NOT EXISTS "spell_class" (
     "spell_id" INTEGER NOT NULL,
     "class_id" INTEGER NOT NULL,
@@ -130,148 +132,215 @@ CREATE TABLE IF NOT EXISTS "reusable_item" (
 );
 
 CREATE TABLE IF NOT EXISTS "summon" (
-    "id"          INTEGER NOT NULL,
+    "id"          INTEGER      NOT NULL,
     "title"       VARCHAR(255) NOT NULL,
-    "description" TEXT    NOT NULL,
-    "fp_cost"     INTEGER NULL,
-    "hp_cost"     INTEGER NULL,
-    "boss_id"     INTEGER NULL,
-    "location_id" INTEGER NULL,
-    "dungeon_id"  INTEGER NULL,
-    "npc_id"      INTEGER NULL,
+    "description" TEXT         NOT NULL,
+    "fp_cost"     INTEGER      NULL,
+    "hp_cost"     INTEGER      NULL,
+    "boss_id"     INTEGER      NULL,
+    "location_id" INTEGER      NULL,
+    "dungeon_id"  INTEGER      NULL,
+    "npc_id"      INTEGER      NULL,
     PRIMARY KEY ("id")
 );
 
--- Foreign key constraints (added after all tables exist)
+-- Foreign key constraints
+-- Each is wrapped in a DO block that skips silently if already present.
 
-ALTER TABLE "location"
-    ADD CONSTRAINT IF NOT EXISTS "location_prev_location_id_foreign"
-    FOREIGN KEY ("prev_location_id") REFERENCES "location"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'location_prev_location_id_foreign') THEN
+        ALTER TABLE "location" ADD CONSTRAINT "location_prev_location_id_foreign" FOREIGN KEY ("prev_location_id") REFERENCES "location"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "location"
-    ADD CONSTRAINT IF NOT EXISTS "location_next_location_id_foreign"
-    FOREIGN KEY ("next_location_id") REFERENCES "location"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'location_next_location_id_foreign') THEN
+        ALTER TABLE "location" ADD CONSTRAINT "location_next_location_id_foreign" FOREIGN KEY ("next_location_id") REFERENCES "location"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "npc"
-    ADD CONSTRAINT IF NOT EXISTS "npc_initial_location_id_foreign"
-    FOREIGN KEY ("initial_location_id") REFERENCES "location"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'npc_initial_location_id_foreign') THEN
+        ALTER TABLE "npc" ADD CONSTRAINT "npc_initial_location_id_foreign" FOREIGN KEY ("initial_location_id") REFERENCES "location"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "boss"
-    ADD CONSTRAINT IF NOT EXISTS "boss_game_id_foreign"
-    FOREIGN KEY ("game_id") REFERENCES "elden_ring"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'boss_game_id_foreign') THEN
+        ALTER TABLE "boss" ADD CONSTRAINT "boss_game_id_foreign" FOREIGN KEY ("game_id") REFERENCES "elden_ring"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "boss"
-    ADD CONSTRAINT IF NOT EXISTS "boss_location_id_foreign"
-    FOREIGN KEY ("location_id") REFERENCES "location"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'boss_location_id_foreign') THEN
+        ALTER TABLE "boss" ADD CONSTRAINT "boss_location_id_foreign" FOREIGN KEY ("location_id") REFERENCES "location"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "dungeon"
-    ADD CONSTRAINT IF NOT EXISTS "dungeon_location_id_foreign"
-    FOREIGN KEY ("location_id") REFERENCES "location"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'dungeon_location_id_foreign') THEN
+        ALTER TABLE "dungeon" ADD CONSTRAINT "dungeon_location_id_foreign" FOREIGN KEY ("location_id") REFERENCES "location"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "dungeon"
-    ADD CONSTRAINT IF NOT EXISTS "dungeon_boss_id_foreign"
-    FOREIGN KEY ("boss_id") REFERENCES "boss"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'dungeon_boss_id_foreign') THEN
+        ALTER TABLE "dungeon" ADD CONSTRAINT "dungeon_boss_id_foreign" FOREIGN KEY ("boss_id") REFERENCES "boss"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "remembrance"
-    ADD CONSTRAINT IF NOT EXISTS "remembrance_boss_id_foreign"
-    FOREIGN KEY ("boss_id") REFERENCES "boss"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'remembrance_boss_id_foreign') THEN
+        ALTER TABLE "remembrance" ADD CONSTRAINT "remembrance_boss_id_foreign" FOREIGN KEY ("boss_id") REFERENCES "boss"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "weapon"
-    ADD CONSTRAINT IF NOT EXISTS "weapon_class_id_foreign"
-    FOREIGN KEY ("class_id") REFERENCES "weapon_class"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'weapon_class_id_foreign') THEN
+        ALTER TABLE "weapon" ADD CONSTRAINT "weapon_class_id_foreign" FOREIGN KEY ("class_id") REFERENCES "weapon_class"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "weapon"
-    ADD CONSTRAINT IF NOT EXISTS "weapon_remembrance_id_foreign"
-    FOREIGN KEY ("remembrance_id") REFERENCES "remembrance"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'weapon_remembrance_id_foreign') THEN
+        ALTER TABLE "weapon" ADD CONSTRAINT "weapon_remembrance_id_foreign" FOREIGN KEY ("remembrance_id") REFERENCES "remembrance"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "weapon"
-    ADD CONSTRAINT IF NOT EXISTS "weapon_boss_id_foreign"
-    FOREIGN KEY ("boss_id") REFERENCES "boss"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'weapon_boss_id_foreign') THEN
+        ALTER TABLE "weapon" ADD CONSTRAINT "weapon_boss_id_foreign" FOREIGN KEY ("boss_id") REFERENCES "boss"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "weapon"
-    ADD CONSTRAINT IF NOT EXISTS "weapon_location_id_foreign"
-    FOREIGN KEY ("location_id") REFERENCES "location"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'weapon_location_id_foreign') THEN
+        ALTER TABLE "weapon" ADD CONSTRAINT "weapon_location_id_foreign" FOREIGN KEY ("location_id") REFERENCES "location"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "weapon"
-    ADD CONSTRAINT IF NOT EXISTS "weapon_dungeon_id_foreign"
-    FOREIGN KEY ("dungeon_id") REFERENCES "dungeon"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'weapon_dungeon_id_foreign') THEN
+        ALTER TABLE "weapon" ADD CONSTRAINT "weapon_dungeon_id_foreign" FOREIGN KEY ("dungeon_id") REFERENCES "dungeon"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "weapon"
-    ADD CONSTRAINT IF NOT EXISTS "weapon_npc_id_foreign"
-    FOREIGN KEY ("npc_id") REFERENCES "npc"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'weapon_npc_id_foreign') THEN
+        ALTER TABLE "weapon" ADD CONSTRAINT "weapon_npc_id_foreign" FOREIGN KEY ("npc_id") REFERENCES "npc"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "spell"
-    ADD CONSTRAINT IF NOT EXISTS "spell_remembrance_id_foreign"
-    FOREIGN KEY ("remembrance_id") REFERENCES "remembrance"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'spell_remembrance_id_foreign') THEN
+        ALTER TABLE "spell" ADD CONSTRAINT "spell_remembrance_id_foreign" FOREIGN KEY ("remembrance_id") REFERENCES "remembrance"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "spell"
-    ADD CONSTRAINT IF NOT EXISTS "spell_boss_id_foreign"
-    FOREIGN KEY ("boss_id") REFERENCES "boss"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'spell_boss_id_foreign') THEN
+        ALTER TABLE "spell" ADD CONSTRAINT "spell_boss_id_foreign" FOREIGN KEY ("boss_id") REFERENCES "boss"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "spell"
-    ADD CONSTRAINT IF NOT EXISTS "spell_location_id_foreign"
-    FOREIGN KEY ("location_id") REFERENCES "location"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'spell_location_id_foreign') THEN
+        ALTER TABLE "spell" ADD CONSTRAINT "spell_location_id_foreign" FOREIGN KEY ("location_id") REFERENCES "location"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "spell"
-    ADD CONSTRAINT IF NOT EXISTS "spell_dungeon_id_foreign"
-    FOREIGN KEY ("dungeon_id") REFERENCES "dungeon"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'spell_dungeon_id_foreign') THEN
+        ALTER TABLE "spell" ADD CONSTRAINT "spell_dungeon_id_foreign" FOREIGN KEY ("dungeon_id") REFERENCES "dungeon"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "spell"
-    ADD CONSTRAINT IF NOT EXISTS "spell_npc_id_foreign"
-    FOREIGN KEY ("npc_id") REFERENCES "npc"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'spell_npc_id_foreign') THEN
+        ALTER TABLE "spell" ADD CONSTRAINT "spell_npc_id_foreign" FOREIGN KEY ("npc_id") REFERENCES "npc"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "skill"
-    ADD CONSTRAINT IF NOT EXISTS "skill_remembrance_id_foreign"
-    FOREIGN KEY ("remembrance_id") REFERENCES "remembrance"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'skill_remembrance_id_foreign') THEN
+        ALTER TABLE "skill" ADD CONSTRAINT "skill_remembrance_id_foreign" FOREIGN KEY ("remembrance_id") REFERENCES "remembrance"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "skill"
-    ADD CONSTRAINT IF NOT EXISTS "skill_boss_id_foreign"
-    FOREIGN KEY ("boss_id") REFERENCES "boss"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'skill_boss_id_foreign') THEN
+        ALTER TABLE "skill" ADD CONSTRAINT "skill_boss_id_foreign" FOREIGN KEY ("boss_id") REFERENCES "boss"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "skill"
-    ADD CONSTRAINT IF NOT EXISTS "skill_location_id_foreign"
-    FOREIGN KEY ("location_id") REFERENCES "location"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'skill_location_id_foreign') THEN
+        ALTER TABLE "skill" ADD CONSTRAINT "skill_location_id_foreign" FOREIGN KEY ("location_id") REFERENCES "location"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "skill"
-    ADD CONSTRAINT IF NOT EXISTS "skill_dungeon_id_foreign"
-    FOREIGN KEY ("dungeon_id") REFERENCES "dungeon"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'skill_dungeon_id_foreign') THEN
+        ALTER TABLE "skill" ADD CONSTRAINT "skill_dungeon_id_foreign" FOREIGN KEY ("dungeon_id") REFERENCES "dungeon"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "skill"
-    ADD CONSTRAINT IF NOT EXISTS "skill_npc_id_foreign"
-    FOREIGN KEY ("npc_id") REFERENCES "npc"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'skill_npc_id_foreign') THEN
+        ALTER TABLE "skill" ADD CONSTRAINT "skill_npc_id_foreign" FOREIGN KEY ("npc_id") REFERENCES "npc"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "reusable_item"
-    ADD CONSTRAINT IF NOT EXISTS "reusable_item_remembrance_id_foreign"
-    FOREIGN KEY ("remembrance_id") REFERENCES "remembrance"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'reusable_item_remembrance_id_foreign') THEN
+        ALTER TABLE "reusable_item" ADD CONSTRAINT "reusable_item_remembrance_id_foreign" FOREIGN KEY ("remembrance_id") REFERENCES "remembrance"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "reusable_item"
-    ADD CONSTRAINT IF NOT EXISTS "reusable_item_boss_id_foreign"
-    FOREIGN KEY ("boss_id") REFERENCES "boss"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'reusable_item_boss_id_foreign') THEN
+        ALTER TABLE "reusable_item" ADD CONSTRAINT "reusable_item_boss_id_foreign" FOREIGN KEY ("boss_id") REFERENCES "boss"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "reusable_item"
-    ADD CONSTRAINT IF NOT EXISTS "reusable_item_location_id_foreign"
-    FOREIGN KEY ("location_id") REFERENCES "location"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'reusable_item_location_id_foreign') THEN
+        ALTER TABLE "reusable_item" ADD CONSTRAINT "reusable_item_location_id_foreign" FOREIGN KEY ("location_id") REFERENCES "location"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "reusable_item"
-    ADD CONSTRAINT IF NOT EXISTS "reusable_item_dungeon_id_foreign"
-    FOREIGN KEY ("dungeon_id") REFERENCES "dungeon"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'reusable_item_dungeon_id_foreign') THEN
+        ALTER TABLE "reusable_item" ADD CONSTRAINT "reusable_item_dungeon_id_foreign" FOREIGN KEY ("dungeon_id") REFERENCES "dungeon"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "reusable_item"
-    ADD CONSTRAINT IF NOT EXISTS "reusable_item_npc_id_foreign"
-    FOREIGN KEY ("npc_id") REFERENCES "npc"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'reusable_item_npc_id_foreign') THEN
+        ALTER TABLE "reusable_item" ADD CONSTRAINT "reusable_item_npc_id_foreign" FOREIGN KEY ("npc_id") REFERENCES "npc"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "summon"
-    ADD CONSTRAINT IF NOT EXISTS "summon_boss_id_foreign"
-    FOREIGN KEY ("boss_id") REFERENCES "boss"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'summon_boss_id_foreign') THEN
+        ALTER TABLE "summon" ADD CONSTRAINT "summon_boss_id_foreign" FOREIGN KEY ("boss_id") REFERENCES "boss"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "summon"
-    ADD CONSTRAINT IF NOT EXISTS "summon_location_id_foreign"
-    FOREIGN KEY ("location_id") REFERENCES "location"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'summon_location_id_foreign') THEN
+        ALTER TABLE "summon" ADD CONSTRAINT "summon_location_id_foreign" FOREIGN KEY ("location_id") REFERENCES "location"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "summon"
-    ADD CONSTRAINT IF NOT EXISTS "summon_dungeon_id_foreign"
-    FOREIGN KEY ("dungeon_id") REFERENCES "dungeon"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'summon_dungeon_id_foreign') THEN
+        ALTER TABLE "summon" ADD CONSTRAINT "summon_dungeon_id_foreign" FOREIGN KEY ("dungeon_id") REFERENCES "dungeon"("id");
+    END IF;
+END $$;
 
-ALTER TABLE "summon"
-    ADD CONSTRAINT IF NOT EXISTS "summon_npc_id_foreign"
-    FOREIGN KEY ("npc_id") REFERENCES "npc"("id");
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'summon_npc_id_foreign') THEN
+        ALTER TABLE "summon" ADD CONSTRAINT "summon_npc_id_foreign" FOREIGN KEY ("npc_id") REFERENCES "npc"("id");
+    END IF;
+END $$;
