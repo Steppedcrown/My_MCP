@@ -1,3 +1,7 @@
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 import httpx
 from mcp.server.fastmcp import FastMCP
 from VectorDB.search import semantic_search as _semantic_search, VALID_ENTITY_TYPES
