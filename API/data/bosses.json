@@ -3,120 +3,136 @@
     "id": 1,
     "game_id": 1,
     "title": "Divine Beast Dancing Lion",
-    "description": "A massive lion-like divine beast controlled by the power of storm and lightning, serving as a guardian of the Shadow Realm. This fearsome creature dances with deadly grace, wielding the tempest as a weapon against all who dare approach the realm of shadow.",
-    "location_id": 3,
-    "runes": 180000
+    "description": "A legendary divine beast capable of controlling the elements of lightning, wind, and ice. Revered as a messenger of the heavens, its rage mirrors the tumult of the skies. When Messmer's army assailed Belurat, the Tower Settlement, the ritual of the lion dance was turned toward martial ends\u2014its divinity, its fury, its light-footed beauty turned into a weapon of war.",
+    "location_id": 1,
+    "runes": 120000
   },
   {
     "id": 2,
     "game_id": 1,
-    "title": "Rellana Twin Moon Knight",
-    "description": "A knight of immense power who wields the twin moons, a master of both sorcery and incantation. Rellana served Messmer in the Land of Shadow, wielding blades imbued with the light of two moons to cut down any who would oppose her lord.",
-    "location_id": 3,
-    "runes": 280000
+    "title": "Rellana, Twin Moon Knight",
+    "description": "A former princess of the Carian Royal Family and the younger sister of Rennala, Queen of the Full Moon. Rellana disavowed her birthright and chose to stand at Messmer's side, becoming known as the Sword of Messmer. She wields a pair of Light Greatswords imbued with Glintstone magic and Messmer's Flame, and is found at the end of Castle Ensis.",
+    "location_id": 1,
+    "runes": 240000
   },
   {
     "id": 3,
     "game_id": 1,
     "title": "Messmer the Impaler",
-    "description": "A demigod son of Marika who was exiled to the Land of Shadow, erased from the Golden Order's history. Messmer commands serpentine fire with terrifying ferocity, impaling his enemies upon his great spear while his flames consume all that once lived in shadow.",
+    "description": "A demigod and the leader of the crusade against the Hornsent people, responsible for killing their Divine Beasts and burning the Tower Settlement. Revealed to be Queen Marika's son, secreted away and abandoned in the Land of Shadow. In combat, he utilizes Fire-based Spells and a Greatspear. His second phase, Base Serpent Messmer, reveals the Abyssal Serpent coiled within him.",
     "location_id": 3,
-    "runes": 420000
+    "runes": 400000
   },
   {
     "id": 4,
     "game_id": 1,
-    "title": "Metyr Mother of Fingers",
-    "description": "A horrifying being that serves as the progenitor of the Two Fingers, a primordial entity that communicates the will of the Greater Will. Metyr dwells in the deepest sanctum of Enir-Ilim, a writhing mass of fingers and divine power that has long since lost its original purpose.",
-    "location_id": 10,
+    "title": "Romina, Saint of the Bud",
+    "description": "An amalgamation of various creatures\u2014scorpion, centipede, butterfly, and humanoid. After her church was burned during Messmer's crusade, Romina discovered a twisted divine element and weaved it into the Scarlet Rot, wielding the bud she cradled as a deadly poleblade in combat. She is found in the Church of the Bud within the Ancient Ruins of Rauh.",
+    "location_id": 5,
     "runes": 380000
   },
   {
     "id": 5,
     "game_id": 1,
     "title": "Putrescent Knight",
-    "description": "A knight bound to the Finger Ruins, corrupted by the festering power of rot and death. This spectral warrior rides a pale horse and wields frost and scarlet rot, a guardian of the ancient ruins who has been transformed into something neither living nor dead.",
+    "description": "A large decrepit skeleton knight riding a ghostly steed, found guarding the entrance to St. Trina's cave at the end of Stone Coffin Fissure. All tainted flesh eventually becomes putrescence, and this clump of it imbibed St. Trina's nectar, which granted it eternal rest. And so it was that putrescence became her knight.",
     "location_id": 6,
     "runes": 220000
   },
   {
     "id": 6,
     "game_id": 1,
-    "title": "Romina Saint of the Bud",
-    "description": "Once a saint who came from the far east, Romina was transformed by the scarlet rot into a horrifying insectoid creature of immense power. She embodies the spreading bud of rot's bloom and guards the passage deeper into the ancient ruins, her body a fusion of woman and centipede.",
-    "location_id": 4,
-    "runes": 380000
+    "title": "Commander Gaius",
+    "description": "A towering commander who rides a boar into battle and uses several magic and gravity attacks. Gaius was in fact a warrior of albinauric extraction. Riding atop the boar he called his other half, both were as elder brothers to the lion, and both were cursed from birth. In spite of, or perhaps because of this very reason, Gaius was both Messmer's friend and the leader of his men.",
+    "location_id": 2,
+    "runes": 230000
   },
   {
     "id": 7,
     "game_id": 1,
-    "title": "Commander Gaius",
-    "description": "A loyal commander who served Messmer in the conquest of the Land of Shadow, now continuing his eternal vigil atop his great war boar. Gaius was one of Messmer's most trusted officers, a powerful warrior who charges down enemies with unstoppable force and gravitational magic.",
+    "title": "Scadutree Avatar",
+    "description": "The Realm of Shadow's equivalent of the Erdtree Avatar, resembling an enlarged Shadow Sunflower with two massive roots for arms. It can summon thorns and conjure the Scadutree's light for offense. The Scadutree is the shadow of the Erdtree\u2014born of dark notions that bear no sense of Order, that twist and bend its stock, rendering it brittle. It is found at the Scadutree Base.",
     "location_id": 2,
-    "runes": 320000
+    "runes": 260000
   },
   {
     "id": 8,
     "game_id": 1,
-    "title": "Scadutree Avatar",
-    "description": "A massive divine being that serves as the embodiment of the Scadutree, the great shadow tree that defines the Land of Shadow. This towering entity of wood and sacred power protects the roots of the Scadutree, an ancient guardian formed from the very essence of shadow and blight.",
-    "location_id": 6,
-    "runes": 380000
+    "title": "Metyr, Mother of Fingers",
+    "description": "A towering celestial being composed of several fingers with two arms in front and a stomach made of smaller fingers. The mother of all Two Fingers and Fingercreepers, Metyr was in turn a magnificently gleaming daughter of the Greater Will, and the first shooting star to fall upon the Lands Between. She uses wide attacks and magic imbued with gravitational properties.",
+    "location_id": 2,
+    "runes": 420000
   },
   {
     "id": 9,
     "game_id": 1,
-    "title": "Midra Lord of Frenzied Flame",
-    "description": "Once a lord who sought to contain the frenzied flame within himself to protect others from its madness, Midra ultimately succumbed to its power and became its vessel. He dwells within the Abyssal Woods, a place of profound stillness hiding an apocalyptic force of yellow flame behind his genteel appearance.",
+    "title": "Midra, Lord of Frenzied Flame",
+    "description": "The embodiment of the Frenzied Flame, found as the final boss of Midra's Manse in the Abyssal Woods. As the golden barbs inflicted eternal agony upon him, Midra held fast to Nanaya's entreaty: 'Endure.' The word was a curse. He wields a barbed Greatsword infused with the Frenzied Flame and inflicts Madness upon those he strikes.",
     "location_id": 8,
-    "runes": 300000
+    "runes": 410000
   },
   {
     "id": 10,
     "game_id": 1,
     "title": "Bayle the Dread",
-    "description": "An ancient and supremely powerful dragon who broke away from the ways of the ancient dragons to pursue his own devastating path of conquest. Bayle is feared even among dragonkind, a creature of immense ferocity and flame who makes his lair atop the Jagged Peak, having defeated countless challengers including the legendary Igon's companions.",
+    "description": "A primeval legendary dragon and the forefather of the drakes, a sworn enemy of the ancient dragons, and the target of Igon's vengeance. Bayle turned upon Dragonlord Placidusax and they fought to a stalemate, leaving both severely wounded. He is found at the summit of the Jagged Peak, missing his left leg and most of his wings, and deals both Fire and Lightning damage.",
     "location_id": 7,
-    "runes": 420000
+    "runes": 490000
   },
   {
     "id": 11,
     "game_id": 1,
     "title": "Promised Consort Radahn",
-    "description": "The reborn Starscourge Radahn, resurrected through Miquella's machinations and fused with the power of Miquella's own divinity. As Miquella's promised consort, Radahn serves as the final guardian of Enir-Ilim, wielding both his iconic gravity-infused blades and the golden radiance of Miquella's charm in a battle of apocalyptic scale.",
+    "description": "An imposing, fully armored humanoid enemy adorned in red and gold with a lion-shaped helmet, wielding two colossal swords. He is the final boss of Elden Ring: Shadow of the Erdtree. Radahn wields both Mohg's Bloodflame and his signature Gravity Magic. In his second phase, Radahn, Consort of Miquella, Miquella joins the fray, granting Radahn powerful Holy-based attacks.",
     "location_id": 10,
-    "runes": 700000
+    "runes": 500000
   },
   {
     "id": 12,
     "game_id": 1,
     "title": "Golden Hippopotamus",
-    "description": "A colossal hippopotamus encrusted with golden thorns and imbued with sacred power, serving as a guardian of the Shadow Keep. This unlikely but terrifying beast charges and swallows intruders whole, its golden spines erupting from its body to impale any who would threaten the keep's inner sanctum.",
+    "description": "A towering foe with a head of a hippopotamus encountered within the Shadow Keep legacy dungeon. A formidable great enemy boss that guards the path deeper into the Shadow Keep, capable of devastating physical attacks and capable of impaling foes upon the great spines that erupt from its body.",
     "location_id": 3,
-    "runes": 140000
+    "runes": 120000
   },
   {
     "id": 13,
     "game_id": 1,
-    "title": "Demi-Human Swordmaster Onze",
-    "description": "A remarkably skilled demi-human who has mastered the art of the sword beyond what most of his kind could ever achieve. Onze leads his demi-human kin with fierce loyalty and combative brilliance, wielding his blade with speed and precision that belies his demi-human heritage.",
+    "title": "Blackgaol Knight",
+    "description": "A powerful knight clad in dark armor encountered in the Belurat Gaol of the Gravesite Plain. A formidable field boss armed with a greatsword and a crossbow, the Blackgaol Knight serves as one of the first major challenges awaiting those who enter the Land of Shadow.",
     "location_id": 1,
     "runes": 24000
   },
   {
     "id": 14,
     "game_id": 1,
-    "title": "Ghostflame Dragon",
-    "description": "A spectral dragon suffused with the cold blue fire of ghostflame, an undead draconic entity that haunts the desolate reaches of the Land of Shadow. Unlike living dragons, this creature breathes ghostflame that chills the soul as much as the body, a remnant of death's dominion over the shadowed lands.",
-    "location_id": 2,
-    "runes": 180000
+    "title": "Demi-Human Swordmaster Onze",
+    "description": "A swift and deadly demi-human swordmaster encountered in the Gravesite Plain. Onze wields dual blades with remarkable speed and ferocity, presenting a dangerous challenge to unprepared Tarnished who venture into the Land of Shadow.",
+    "location_id": 1,
+    "runes": 24000
   },
   {
     "id": 15,
     "game_id": 1,
-    "title": "Rugalea the Great Red Bear",
-    "description": "A titanic bear of fearsome power roaming the wilds of the Land of Shadow, its fur matted with the blood of countless prey. Rugalea is a beast of pure ferocity with no loyalty save to its own savage nature, a territorial predator that has claimed a vast stretch of the shadow realm as its hunting ground.",
-    "location_id": 1,
-    "runes": 36000
+    "title": "Ancient Dragon Senessax",
+    "description": "A great ancient dragon capable of controlling the elements of lightning, wind, and fire. Found on the west side of the Jagged Peak, Senessax is a formidable great enemy that guards the paths of the jagged volcanic mountain range of the Land of Shadow.",
+    "location_id": 7,
+    "runes": 180000
+  },
+  {
+    "id": 16,
+    "game_id": 1,
+    "title": "Dancer of Ranah",
+    "description": "A swift and deadly foe armed with two swords, found in the Southern Nameless Mausoleum along the Cerulean Coast. The Dancer of Ranah is a great enemy boss who fights with fluid, dance-like movements, wielding the Dancing Blade of Ranah with lethal grace.",
+    "location_id": 6,
+    "runes": 80000
+  },
+  {
+    "id": 17,
+    "game_id": 1,
+    "title": "Jori, Elder Inquisitor",
+    "description": "A towering foe who holds the Barbed Staff-Spear and is found deep within the Abyssal Woods. Jori is a great enemy boss who served as an inquisitor in the Land of Shadow, using his imposing weapon with crushing force against any who trespass into the forbidden forest.",
+    "location_id": 8,
+    "runes": 180000
   }
 ]

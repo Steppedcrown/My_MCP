@@ -22,49 +22,112 @@
   },
   {
     "id": 4,
-    "title": "Specimen Storehouse",
-    "location_id": 3,
-    "is_legacy": false,
-    "boss_id": 12
-  },
-  {
-    "id": 5,
-    "title": "Stone Coffin Fissure",
-    "location_id": 6,
-    "is_legacy": false,
-    "boss_id": 5
-  },
-  {
-    "id": 6,
-    "title": "Ruined Forge Lava Intake",
-    "location_id": 2,
-    "is_legacy": false,
-    "boss_id": null
-  },
-  {
-    "id": 7,
-    "title": "Darklight Catacombs",
-    "location_id": 8,
-    "is_legacy": false,
-    "boss_id": 13
-  },
-  {
-    "id": 8,
-    "title": "Fog Rift Catacombs",
-    "location_id": 9,
-    "is_legacy": false,
-    "boss_id": 15
-  },
-  {
-    "id": 9,
     "title": "Enir-Ilim",
     "location_id": 10,
     "is_legacy": true,
     "boss_id": 11
   },
   {
+    "id": 5,
+    "title": "Stone Coffin Fissure",
+    "location_id": 6,
+    "is_legacy": true,
+    "boss_id": 5
+  },
+  {
+    "id": 6,
+    "title": "Fort of Reprimand",
+    "location_id": 2,
+    "is_legacy": true,
+    "boss_id": null
+  },
+  {
+    "id": 7,
+    "title": "Midra's Manse",
+    "location_id": 8,
+    "is_legacy": true,
+    "boss_id": 9
+  },
+  {
+    "id": 8,
+    "title": "Belurat Gaol",
+    "location_id": 1,
+    "is_legacy": false,
+    "boss_id": 14
+  },
+  {
+    "id": 9,
+    "title": "Dragon's Pit",
+    "location_id": 1,
+    "is_legacy": false,
+    "boss_id": null
+  },
+  {
     "id": 10,
-    "title": "Jagged Peak",
+    "title": "Rivermouth Cave",
+    "location_id": 1,
+    "is_legacy": false,
+    "boss_id": null
+  },
+  {
+    "id": 11,
+    "title": "Ruined Forge Lava Intake",
+    "location_id": 1,
+    "is_legacy": false,
+    "boss_id": null
+  },
+  {
+    "id": 12,
+    "title": "Bonny Gaol",
+    "location_id": 2,
+    "is_legacy": false,
+    "boss_id": null
+  },
+  {
+    "id": 13,
+    "title": "Darklight Catacombs",
+    "location_id": 2,
+    "is_legacy": false,
+    "boss_id": 17
+  },
+  {
+    "id": 14,
+    "title": "Ruined Forge of Starfall Past",
+    "location_id": 2,
+    "is_legacy": false,
+    "boss_id": null
+  },
+  {
+    "id": 15,
+    "title": "Cathedral of Manus Metyr",
+    "location_id": 2,
+    "is_legacy": false,
+    "boss_id": 8
+  },
+  {
+    "id": 16,
+    "title": "Fog Rift Catacombs",
+    "location_id": 4,
+    "is_legacy": false,
+    "boss_id": null
+  },
+  {
+    "id": 17,
+    "title": "Scorpion River Catacombs",
+    "location_id": 4,
+    "is_legacy": false,
+    "boss_id": null
+  },
+  {
+    "id": 18,
+    "title": "Lamenter's Gaol",
+    "location_id": 6,
+    "is_legacy": false,
+    "boss_id": null
+  },
+  {
+    "id": 19,
+    "title": "Grand Altar of Dragon Communion",
     "location_id": 7,
     "is_legacy": false,
     "boss_id": 10

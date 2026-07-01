@@ -2,70 +2,70 @@
   {
     "id": 1,
     "title": "Gravesite Plain",
-    "description": "The vast opening expanse of the Land of Shadow, a mist-shrouded plain littered with the graves of countless warriors who followed Miquella into this forgotten realm. The withered remnants of a once-verdant land stretch beneath the shadow of the Erdtree's lesser counterpart.",
+    "description": "A somber plain covered in spiritgraves, located in the realm of shadow. The first region players arrive at after touching Miquella's withered hand in the Mohgwyn Dynasty Mausoleum. The spiral tower of the hornsent lies to the northwest, and the entire expanse is marred by the harrowing ravages of war. Belurat Tower Settlement, Castle Ensis, and several nameless mausoleums can be found within its borders.",
     "prev_location_id": null,
     "next_location_id": 2
   },
   {
     "id": 2,
     "title": "Scadu Altus",
-    "description": "A high plateau region bathed in perpetual shadow, elevated above the Gravesite Plain. This sweeping highland is dominated by the looming Shadow Keep and scattered ruins of a civilization that once thrived under Marika's shadow. The Scadutree fragments found here are key to surviving the Land of Shadow.",
+    "description": "The plateau occupied by Messmer's army that peers towards the Scadutree to the northeast, named after its counterpart in the realm of the Erdtree. Located to the northeast of Gravesite Plain, at its center lies the Shadow Keep. Accessible by defeating Rellana, Twin Moon Knight in Castle Ensis. Home to Messmer the Impaler and numerous Black Knights, it is the primary military domain of the Land of Shadow.",
     "prev_location_id": 1,
     "next_location_id": 3
   },
   {
     "id": 3,
     "title": "Shadow Keep",
-    "description": "A colossal fortress at the heart of the Land of Shadow, built to guard the secrets of Marika's past. Its blood-soaked halls and towering ramparts house fearsome guardians and the echoes of a forgotten divine order. The keep serves as a nexus connecting several of the DLC's major regions.",
+    "description": "A major legacy dungeon located at the heart of the Scadu Altus region, serving as the seat of Messmer the Impaler's army. A non-linear fortress divided into three sections: the Main Plaza, the Church District, and the Specimen Storehouse. Players must navigate through Messmer Soldiers, Fire Knights, Black Knights, and other formidable foes. Bosses include the Golden Hippopotamus and Messmer the Impaler himself. Defeating Messmer yields Messmer's Kindling, required to access Enir-Ilim.",
     "prev_location_id": 2,
     "next_location_id": 4
   },
   {
     "id": 4,
-    "title": "Ancient Ruins of Rauh",
-    "description": "The crumbling remnants of an ancient civilization predating the current age, nestled among massive trees and overgrown stonework. These ruins whisper of a time before the Erdtree's dominion, where forgotten gods and their servants once conducted sacred rites in towering temples now reclaimed by nature.",
+    "title": "Rauh Base",
+    "description": "The lower part of the Land of Towers, located in the valley beneath the Ancient Ruins of Rauh. Accessible by traveling through a tunnel between Scadu Altus from Moorth Ruins and heading west. Consists primarily of Temple Town Ruins and Scorpion River Catacombs. Players must navigate a poison swamp and fight Golems, Horned Warriors, and Spider Scorpions. The map fragment for this region is Map: Rauh Ruins, found near Temple Town Ruins.",
     "prev_location_id": 3,
     "next_location_id": 5
   },
   {
     "id": 5,
-    "title": "Rauh Ruins",
-    "description": "A sprawling network of decayed temples and collapsed archways stretching across a misty highland, distinct from the deeper Ancient Ruins. Once a place of reverence for an older faith, the structures are now haunted by aberrant creatures and the spirits of priests who refused to abandon their posts.",
+    "title": "Ancient Ruins of Rauh",
+    "description": "Giant ruins located north of Gravesite Plain and west of Scadu Altus, accessible in their entirety only by traveling through the Shadow Keep. These flooded, overgrown ruins are split into two halves by a chasm. To the southwest stands the Church of the Bud, overlooking the tower of shadow. Home to Spider Scorpions, Divine Bird Warriors, Curseblades, and Furnace Golems. Romina, Saint of the Bud is the area's final boss; defeating her and burning the Sealing Tree grants access to Enir-Ilim.",
     "prev_location_id": 4,
     "next_location_id": 6
   },
   {
     "id": 6,
     "title": "Cerulean Coast",
-    "description": "A hauntingly beautiful shoreline where pale blue waters lap against ash-grey sands beneath an eternally dim sky. The coast is strewn with the wreckage of ancient vessels and the remains of those who sought passage to or from the Land of Shadow, their journeys ending on these desolate shores.",
-    "prev_location_id": 5,
+    "description": "A captivating vista of brilliant blue flowers located south of Gravesite Plain, also known as the Southern Shore. Intermingled with colossal stone coffins of unknown origin that seemingly drifted to this place. To the east, the Jagged Peak thrusts upward into the clouds. Home to the Dancer of Ranah, a Ghostflame Dragon, and the Putrescent Knight. The entrance to Stone Coffin Fissure is located beneath The Fissure Site of Grace and is sealed until Miquella casts away his great rune.",
+    "prev_location_id": 1,
     "next_location_id": 7
   },
   {
     "id": 7,
     "title": "Jagged Peak",
-    "description": "A treacherous mountain range of shattered, knife-edged spires rising sharply from the Land of Shadow. The home of ancient dragons who predate the Erdtree's dominion, its perilous cliffs and narrow paths are scoured by fierce winds and guarded by draconic creatures of immense power.",
+    "description": "A mountainous region southeast of Gravesite Plain, rifled with powerful dragons. Accessed after defeating the Ancient Dragon-Man in Dragon's Pit. Players must ascend the peak past successive drake encounters on their way to face the fearsome Bayle the Dread at the summit. Also home to Ancient Dragon Senessax. The NPC Igon, consumed by his hatred of Bayle, can be found here and provides lore and assistance in the battle against the great dragon.",
     "prev_location_id": 6,
-    "next_location_id": 8
+    "next_location_id": null
   },
   {
     "id": 8,
     "title": "Abyssal Woods",
-    "description": "A pitch-black, foreboding forest of gnarled and leafless trees that seem to drink in all light. An oppressive silence hangs over this cursed woodland, home to the Midra and entities born of the frenzied flame. Torches are rendered useless here, and madness creeps into the minds of those who linger too long.",
-    "prev_location_id": 7,
-    "next_location_id": 9
+    "description": "A thick forest sprawled at the depths of a ravine, east of the Gravesite Plain and south of Scadu Altus, untouched even by sunlight. Known as the sanctum of Sage Midra and a region forbidden by the hornsent. Accessed through Darklight Catacombs at the end of the Recluses' River after defeating Jori, Elder Inquisitor. Torrent is too fearful to be summoned within this region. Patrolled by Aging Untouchables that cause Madness, it culminates in the battle against Midra, Lord of Frenzied Flame inside Midra's Manse.",
+    "prev_location_id": 2,
+    "next_location_id": null
   },
   {
     "id": 9,
     "title": "Hinterland",
-    "description": "A remote and desolate fringe region at the furthest edges of the Land of Shadow, cut off from the rest by treacherous terrain and hostile inhabitants. The Hinterland feels older and more forsaken than even the ruins elsewhere, as though time itself has abandoned this bleak stretch of cursed earth.",
-    "prev_location_id": 8,
+    "description": "The northern region of Scaduview, the area closest to the Scadutree itself. Located north of Scadu Altus and accessible through a hidden passage revealed by performing the O Mother gesture before a statue near the Shadow Keep, Back Gate Site of Grace. Contains the Shaman Village, Finger Ruins of Dheo, the Scadutree Chalice, and an Albinauric's Shack. Home to Fingercreepers, Direwolves, and Albinauric Archers, as well as the boss encounters for the Scadutree Avatar and Commander Gaius.",
+    "prev_location_id": 3,
     "next_location_id": 10
   },
   {
     "id": 10,
     "title": "Enir-Ilim",
-    "description": "The divine pinnacle of the Land of Shadow, a celestial tower of blinding gold and immaculate stonework that pierces the heavens above all other landmarks. This is the seat of Miquella's grand design, where the Empyrean god shed his remaining humanity to complete his transformation, and where the final confrontation of the DLC unfolds.",
+    "description": "The final legacy dungeon of the Shadow of the Erdtree DLC, revealed in its true form only after burning the Sealing Tree behind the Church of the Bud using Messmer's Kindling. A towering, spiraling structure that ascends toward the Gate of Divinity, where Miquella awaits his promised lord. Players must navigate through Horned Warriors, Divine Beast Warriors, Gravebirds, and Inquisitors before confronting Needle Knight Leda and her allies. The dungeon culminates in the climactic battle against Promised Consort Radahn, the final boss of the expansion.",
     "prev_location_id": 9,
     "next_location_id": null
   }

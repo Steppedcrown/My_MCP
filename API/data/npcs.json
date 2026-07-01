@@ -2,49 +2,79 @@
   {
     "id": 1,
     "title": "Needle Knight Leda",
-    "quest_description": "A devoted follower of Miquella who journeyed into the Land of Shadow in service to her lord. Leda leads the group of pilgrims who followed Miquella's trail, but grows increasingly suspicious of the other followers as Miquella's true intentions are revealed. She will turn on those she deems unworthy of following Miquella and must be confronted as allegiances fracture among the pilgrims.",
+    "quest_description": "Needle Knight Leda is the ringleader of Miquella's band of followers in the Realm of Shadow. She first appears beside Miquella's cocoon in Mohgwyn Palace, inviting the Tarnished to touch the withered arm and enter the Realm of Shadow. Inside the DLC she is found at the Highroad Cross Site of Grace in Scadu Altus. After Miquella's great rune is broken, she begins culling followers she deems unworthy, first targeting Hornsent and then Sir Ansbach, forcing the player to choose sides in Shadow Keep. Her questline concludes at the Cleansing Chamber Anteroom in Enir-Ilim, where she makes a final stand to stop the Tarnished from reaching Miquella. Leda's Armor and Leda's Sword can be looted from her corpse after the encounter.",
     "initial_location_id": 1
   },
   {
     "id": 2,
     "title": "Hornsent",
-    "quest_description": "A descendant of the horned people who were subjugated and sacrificed by Marika to forge the Erdtree. He bears deep hatred for Marika and all she represents, yet follows Miquella seeking vengeance and perhaps redemption. His quest intersects with the player's journey through the ruins of his people's civilization, and his fate is shaped by the choices made among Miquella's followers.",
+    "quest_description": "Hornsent is a surviving member of the tower folk whose people were purged by Messmer the Impaler on Queen Marika's command. He is found at the Three-Path Cross in Gravesite Plain alongside Redmane Freyja and gives the player the Cross Map. Though bound to Miquella's group by the Empyrean's charm, his primary motivation is vengeance against Messmer. After Miquella's great rune is broken he moves to Scadu Altus, then Shadow Keep, where he can be summoned against the Golden Hippopotamus and Messmer the Impaler. Needle Knight Leda eventually targets him; the player must choose to aid Leda or defend Hornsent. If he survives Messmer's defeat, he invades near the Church of the Bud in the Ancient Ruins of Rauh. He appears in the final NPC battle in Enir-Ilim if not killed earlier.",
     "initial_location_id": 1
   },
   {
     "id": 3,
     "title": "Thiollier",
-    "quest_description": "A devoted worshipper of St. Trina, the sleepful maiden, who followed Miquella into the Land of Shadow out of devotion to her somnolent aspect. Thiollier seeks an audience with St. Trina and will go to extraordinary lengths to serve her, even drinking a poisonous elixir at her request. His questline culminates in tragedy as his devotion is tested to its absolute limit.",
+    "quest_description": "Thiollier is a Tarnished follower of Miquella who is proficient in poison and acts as a merchant. He is found near the Pillar Path Cross in Gravesite Plain. His questline revolves around his devotion to St. Trina, the sleeping goddess who is Miquella's discarded other half. After Miquella's great rune is broken, he travels south to the Stone Coffin Fissure to find St. Trina in the Garden of Deep Purple. The player must repeatedly drink St. Trina's lethal nectar to hear her voice, then pass on her words to Thiollier, who becomes enraged and invades the player. After being defeated, he reconciles and can be summoned for the NPC battle and the final boss fight in Enir-Ilim. His equipment can be looted near the entrance after the final boss is defeated.",
     "initial_location_id": 1
   },
   {
     "id": 4,
     "title": "Moore",
-    "quest_description": "A jovial and somewhat naive follower of Miquella who wears a distinctive jar upon his head. Moore is among the pilgrims who crossed into the Land of Shadow following Miquella's grace. He maintains a cheerful and trusting disposition despite the dangers surrounding him, and his questline involves navigating the perilous conflicts that erupt among the pilgrims.",
-    "initial_location_id": 2
+    "quest_description": "Moore is a gentle giant follower of Miquella who leads the Forager Brood, a group of friendly Lesser Kindred of Rot that scavenge the Land of Shadow for crafting materials. He is found at a small camp outside Belurat, Tower Settlement and acts as a merchant. His questline involves collecting seven Forager Brood Cookbooks scattered across the realm and delivering Black Syrup to Thiollier. Killing two of the friendly Forager Brood pests will cause Moore to invade the player. After Miquella's great rune is broken, the player must advise Moore on how to cope with his sorrow; encouraging him to move on causes him to appear as a hostile combatant in the NPC battle at Enir-Ilim, where his Verdigris Greatshield and Verdigris Set can be looted from his corpse.",
+    "initial_location_id": 1
   },
   {
     "id": 5,
     "title": "Sir Ansbach",
-    "quest_description": "A former servant of Mohg, Lord of Blood, who followed Miquella into the Land of Shadow after Miquella used Mohg's corpse as a vessel for his journey. Ansbach harbors complex feelings about Miquella's actions and seeks to understand the truth of his lord's fate. He is a skilled warrior and scholar who provides the player with crucial lore about Miquella's true nature and motivations.",
-    "initial_location_id": 3
+    "quest_description": "Sir Ansbach is a former commander of the Pureblood Knights who once served Mohg, Lord of Blood, and now follows Miquella into the Realm of Shadow. He is found at a camp outside Belurat, Tower Settlement alongside Moore. His questline involves investigating Miquella's Crosses across the Land of Shadow to deduce the Empyrean's true purpose. He later moves to the Storehouse, First Floor of Shadow Keep, where he must be given the Secret Rite Scroll and told of Freyja's situation before he provides a Letter for Freyja. Needle Knight Leda eventually targets him after her conflict with Hornsent concludes. The player must choose to side with Leda or defend Ansbach. If he survives, he can be summoned for the NPC allies battle and the fight against Promised Consort Radahn in Enir-Ilim, dropping his Obsidian Lamina, Furious Blade of Ansbach, and Ansbach's Set upon the final boss's defeat.",
+    "initial_location_id": 1
   },
   {
     "id": 6,
-    "title": "Commander Freyja",
-    "quest_description": "A stalwart commander and knight who serves as one of Miquella's most loyal and capable followers. Freyja is a seasoned warrior who accompanies the player through the Land of Shadow, offering aid in battle and counsel along the way. Her unwavering dedication to Miquella is tested as the pilgrim's true purpose becomes clear, and she must decide where her loyalties ultimately lie.",
-    "initial_location_id": 2
+    "title": "Redmane Freyja",
+    "quest_description": "Redmane Freyja is a former knight of General Radahn who now fervently follows Miquella. She is found at the Three-Path Cross in Gravesite Plain alongside Hornsent. She can be summoned to fight the Divine Beast Dancing Lion and Rugalea the Great Red Bear. After Miquella's great rune is broken she moves to Shadow Keep, where she is found on the Storehouse, Seventh Floor struggling to decipher inscriptions. She requires a Letter for Freyja from Sir Ansbach to progress, which reveals the truth of Miquella's vow with General Radahn. In return she gives the player the Golden Lion Shield. If her questline is fully completed she joins the final NPC battle at Enir-Ilim's Cleansing Chamber Anteroom, after which Freyja's Greatsword and Freyja's Set can be looted from her corpse.",
+    "initial_location_id": 1
   },
   {
     "id": 7,
     "title": "Dryleaf Dane",
-    "quest_description": "A wandering monk and unarmed martial artist who follows Miquella's trail into the Land of Shadow. Dane fights exclusively with his body, wielding a powerful dryleaf fighting style that channels spiritual strength through bare hands and feet. He is a quiet and introspective figure whose questline explores his path as a combatant devoted to a fighting tradition honed across long years of wandering.",
-    "initial_location_id": 1
+    "quest_description": "Dryleaf Dane is a silent master of hand-to-hand combat and a fervent follower of Miquella who has served the Empyrean longer than Needle Knight Leda. He is found at the Moorth Ruins in Scadu Altus, the easternmost cross on the New Cross Map. A Monk's Missive and the May the Best Win gesture can be found at the Highroad Cross Site of Grace; using the gesture in Dane's presence initiates a mini boss duel that rewards Dryleaf Arts and Dane's Hat. He can be optionally summoned for the fight against Romina, Saint of the Bud. Dane always appears as a hostile combatant alongside Needle Knight Leda in the NPC allies battle at Enir-Ilim's Cleansing Chamber Anteroom, after which Dane's Footwork can be looted from his corpse.",
+    "initial_location_id": 2
   },
   {
     "id": 8,
     "title": "Igon",
-    "quest_description": "A fierce and half-mad warrior consumed entirely by his obsessive hatred of Bayle the Dread, a powerful dragon who devastated his people. Igon survived a catastrophic encounter with Bayle and has since dedicated every moment of his existence to hunting the dragon down. He enlists the player's help to confront Bayle atop the Jagged Peak, roaring war cries with terrifying intensity throughout the battle.",
+    "quest_description": "Igon is a broken drake warrior found screaming in agony near the Pillar Path Waypoint in Gravesite Plain, having been grievously wounded by the dread dragon Bayle. His questline tasks the player with climbing the Jagged Peak, defeating its drakes, and ultimately confronting Bayle the Dread. After the player defeats the two Jagged Peak Drakes near the Foot of the Jagged Peak, Igon appears and bestows his Furled Finger, begging to be summoned for the fight against Bayle so that his soul may participate in vengeance. Summoning him during the Bayle encounter triggers some of the most impassioned voice lines in the DLC. Upon Bayle's defeat, Igon's equipment including his Greatbow, armor, and Bell Bearing can be looted from his last location near the Jagged Peak drakes arena.",
+    "initial_location_id": 1
+  },
+  {
+    "id": 9,
+    "title": "Count Ymir, High Priest",
+    "quest_description": "Count Ymir is a glintstone sorcerer and High Priest who oversees the Cathedral of Manus Metyr in Scadu Altus. He sells sorceries and provides the player with a Hole-Laden Necklace and a series of Ruins Maps pointing to hanging bells at the Finger Ruins of Rhia, Dheo, and Miyr. Ringing each bell unlocks new stock and advances his quest. His true obsession is revealed as a desire to become the new Mother of Fingers, replacing the corrupted Metyr. After the player descends through his throne into the Finger Ruins of Miyr and defeats Metyr, Mother of Fingers, Ymir turns hostile and must be defeated alongside his servant Jolan in the cathedral. Defeating him yields the High Priest armor set, Ymir's Bell Bearing, and the Maternal Staff.",
+    "initial_location_id": 2
+  },
+  {
+    "id": 10,
+    "title": "Jolan",
+    "quest_description": "Swordhand of Night Jolan is the loyal warrior-servant of Count Ymir, found leaning against a pillar in the Cathedral of Manus Metyr. She appears after the player rings the first bell and earns Count Ymir's trust. As the questline progresses she warms slightly to the player, revealing she and her sister Anna were raised in a lightless gaol to become Swordhands of Night. After Metyr is defeated and Count Ymir is slain, Jolan is found slumped and losing her sight. The player must choose to give her the Iris of Grace, granting her the Swordhand of Night Jolan spirit ash and allowing reunion with her sister Anna at Rabbath's Rise to unlock the Jolan and Anna spirit ash, or the Iris of Occultation, which kills her and yields the Sword of Night katana.",
+    "initial_location_id": 2
+  },
+  {
+    "id": 11,
+    "title": "Dragon Communion Priestess",
+    "quest_description": "The Dragon Communion Priestess, whose true name is Florissax, is a surviving ancient dragon who assumed human form and worships Dragonlord Placidusax. She stands beside the Grand Altar of Dragon Communion on the Jagged Peak. She offers the player the Ancient Dragon's Blessing and invites them to hunt Bayle the Dread, Placidusax's ancient nemesis. If the player obtains Thiollier's Concoction via Moore and Thiollier before they leave Gravesite Plain and gives it to the Priestess at night, she falls into slumber and later awakens feeling disgraced. After Bayle is slain, she rewards the player with the Dragonbolt of Florissax incantation; if the player confesses to putting her to sleep, she pledges her service and bestows the Ancient Dragon Florissax spirit ash. Without the concoction, she departs upon Bayle's death, leaving the Priestess Heart and Flowerstone Gavel.",
     "initial_location_id": 7
+  },
+  {
+    "id": 12,
+    "title": "Hornsent Grandam",
+    "quest_description": "Hornsent Grandam is an elderly survivor of the hornsent people who inhabits a locked storeroom in Belurat, Tower Settlement, accessible with the Storeroom Key. She initially mistakes the player for one of Messmer's soldiers and speaks only in curses. After the Divine Beast Dancing Lion is defeated and the player equips the Divine Beast Head, she recognizes the player as a sculpted keeper and warms to them, gifting the Watchful Spirit incantation and Scorpion Stew, which can be given to Hornsent in exchange for Furnace Visages. She provides more Scorpion Stew whenever the player lacks one. Following the defeat of Messmer the Impaler, she gives the player a Gourmet Scorpion Stew in celebration, and thereafter falls into a peaceful, immortal sleep.",
+    "initial_location_id": 1
+  },
+  {
+    "id": 13,
+    "title": "Fire Knight Queelign",
+    "quest_description": "Fire Knight Queelign is a fanatical Fire Knight found in the Prayer Room of the Church District in Shadow Keep. He is first encountered as a hostile invader in Belurat, Tower Settlement and again outside the Church of the Crusade. In the Prayer Room, locked behind the Prayer Room Key, he is imprisoned and in a state of tormented fervor. The player must choose to give him an Iris of Grace or an Iris of Occultation. Giving the Iris of Grace redeems him, causing him to thank the player and granting the Fire Knight Queelign spirit ash. Giving the Iris of Occultation kills him and yields Queelign's Greatsword. He serves as a thematic counterpart to Jolan, with the iris choice determining his fate and the reward received.",
+    "initial_location_id": 3
   }
 ]

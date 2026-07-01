@@ -1,11 +1,31 @@
 [
   {
     "skill_id": 1,
-    "class_id": 2
+    "class_id": 9
   },
   {
-    "skill_id": 1,
-    "class_id": 5
+    "skill_id": 2,
+    "class_id": 12
+  },
+  {
+    "skill_id": 2,
+    "class_id": 1
+  },
+  {
+    "skill_id": 2,
+    "class_id": 3
+  },
+  {
+    "skill_id": 2,
+    "class_id": 10
+  },
+  {
+    "skill_id": 2,
+    "class_id": 11
+  },
+  {
+    "skill_id": 2,
+    "class_id": 13
   },
   {
     "skill_id": 2,
@@ -14,6 +34,30 @@
   {
     "skill_id": 2,
     "class_id": 5
+  },
+  {
+    "skill_id": 2,
+    "class_id": 14
+  },
+  {
+    "skill_id": 2,
+    "class_id": 15
+  },
+  {
+    "skill_id": 2,
+    "class_id": 20
+  },
+  {
+    "skill_id": 2,
+    "class_id": 21
+  },
+  {
+    "skill_id": 2,
+    "class_id": 22
+  },
+  {
+    "skill_id": 2,
+    "class_id": 7
   },
   {
     "skill_id": 3,
@@ -21,34 +65,730 @@
   },
   {
     "skill_id": 3,
-    "class_id": 11
+    "class_id": 10
+  },
+  {
+    "skill_id": 3,
+    "class_id": 13
+  },
+  {
+    "skill_id": 3,
+    "class_id": 5
+  },
+  {
+    "skill_id": 3,
+    "class_id": 15
   },
   {
     "skill_id": 4,
-    "class_id": 10
+    "class_id": 9
   },
   {
     "skill_id": 5,
-    "class_id": 10
+    "class_id": 7
   },
   {
     "skill_id": 6,
-    "class_id": 1
-  },
-  {
-    "skill_id": 6,
-    "class_id": 11
+    "class_id": 7
   },
   {
     "skill_id": 7,
-    "class_id": 1
-  },
-  {
-    "skill_id": 7,
-    "class_id": 11
+    "class_id": 8
   },
   {
     "skill_id": 8,
+    "class_id": 8
+  },
+  {
+    "skill_id": 9,
+    "class_id": 6
+  },
+  {
+    "skill_id": 10,
+    "class_id": 6
+  },
+  {
+    "skill_id": 11,
+    "class_id": 4
+  },
+  {
+    "skill_id": 12,
+    "class_id": 4
+  },
+  {
+    "skill_id": 13,
+    "class_id": 5
+  },
+  {
+    "skill_id": 14,
+    "class_id": 3
+  },
+  {
+    "skill_id": 15,
     "class_id": 7
+  },
+  {
+    "skill_id": 15,
+    "class_id": 12
+  },
+  {
+    "skill_id": 15,
+    "class_id": 1
+  },
+  {
+    "skill_id": 15,
+    "class_id": 3
+  },
+  {
+    "skill_id": 15,
+    "class_id": 10
+  },
+  {
+    "skill_id": 15,
+    "class_id": 11
+  },
+  {
+    "skill_id": 15,
+    "class_id": 13
+  },
+  {
+    "skill_id": 15,
+    "class_id": 2
+  },
+  {
+    "skill_id": 15,
+    "class_id": 5
+  },
+  {
+    "skill_id": 15,
+    "class_id": 4
+  },
+  {
+    "skill_id": 15,
+    "class_id": 14
+  },
+  {
+    "skill_id": 15,
+    "class_id": 15
+  },
+  {
+    "skill_id": 15,
+    "class_id": 18
+  },
+  {
+    "skill_id": 15,
+    "class_id": 16
+  },
+  {
+    "skill_id": 15,
+    "class_id": 17
+  },
+  {
+    "skill_id": 15,
+    "class_id": 19
+  },
+  {
+    "skill_id": 15,
+    "class_id": 20
+  },
+  {
+    "skill_id": 15,
+    "class_id": 21
+  },
+  {
+    "skill_id": 15,
+    "class_id": 22
+  },
+  {
+    "skill_id": 15,
+    "class_id": 23
+  },
+  {
+    "skill_id": 15,
+    "class_id": 25
+  },
+  {
+    "skill_id": 15,
+    "class_id": 9
+  },
+  {
+    "skill_id": 15,
+    "class_id": 26
+  },
+  {
+    "skill_id": 15,
+    "class_id": 6
+  },
+  {
+    "skill_id": 15,
+    "class_id": 24
+  },
+  {
+    "skill_id": 15,
+    "class_id": 33
+  },
+  {
+    "skill_id": 16,
+    "class_id": 12
+  },
+  {
+    "skill_id": 16,
+    "class_id": 1
+  },
+  {
+    "skill_id": 16,
+    "class_id": 3
+  },
+  {
+    "skill_id": 16,
+    "class_id": 10
+  },
+  {
+    "skill_id": 16,
+    "class_id": 2
+  },
+  {
+    "skill_id": 16,
+    "class_id": 5
+  },
+  {
+    "skill_id": 16,
+    "class_id": 14
+  },
+  {
+    "skill_id": 16,
+    "class_id": 15
+  },
+  {
+    "skill_id": 16,
+    "class_id": 20
+  },
+  {
+    "skill_id": 16,
+    "class_id": 21
+  },
+  {
+    "skill_id": 16,
+    "class_id": 22
+  },
+  {
+    "skill_id": 16,
+    "class_id": 33
+  },
+  {
+    "skill_id": 17,
+    "class_id": 12
+  },
+  {
+    "skill_id": 17,
+    "class_id": 1
+  },
+  {
+    "skill_id": 17,
+    "class_id": 3
+  },
+  {
+    "skill_id": 17,
+    "class_id": 10
+  },
+  {
+    "skill_id": 17,
+    "class_id": 11
+  },
+  {
+    "skill_id": 17,
+    "class_id": 13
+  },
+  {
+    "skill_id": 17,
+    "class_id": 2
+  },
+  {
+    "skill_id": 17,
+    "class_id": 5
+  },
+  {
+    "skill_id": 17,
+    "class_id": 18
+  },
+  {
+    "skill_id": 17,
+    "class_id": 16
+  },
+  {
+    "skill_id": 17,
+    "class_id": 17
+  },
+  {
+    "skill_id": 17,
+    "class_id": 19
+  },
+  {
+    "skill_id": 18,
+    "class_id": 7
+  },
+  {
+    "skill_id": 18,
+    "class_id": 12
+  },
+  {
+    "skill_id": 18,
+    "class_id": 1
+  },
+  {
+    "skill_id": 18,
+    "class_id": 3
+  },
+  {
+    "skill_id": 18,
+    "class_id": 10
+  },
+  {
+    "skill_id": 18,
+    "class_id": 11
+  },
+  {
+    "skill_id": 18,
+    "class_id": 13
+  },
+  {
+    "skill_id": 18,
+    "class_id": 2
+  },
+  {
+    "skill_id": 18,
+    "class_id": 5
+  },
+  {
+    "skill_id": 18,
+    "class_id": 4
+  },
+  {
+    "skill_id": 18,
+    "class_id": 14
+  },
+  {
+    "skill_id": 18,
+    "class_id": 15
+  },
+  {
+    "skill_id": 18,
+    "class_id": 18
+  },
+  {
+    "skill_id": 18,
+    "class_id": 16
+  },
+  {
+    "skill_id": 18,
+    "class_id": 17
+  },
+  {
+    "skill_id": 18,
+    "class_id": 19
+  },
+  {
+    "skill_id": 18,
+    "class_id": 20
+  },
+  {
+    "skill_id": 18,
+    "class_id": 21
+  },
+  {
+    "skill_id": 18,
+    "class_id": 22
+  },
+  {
+    "skill_id": 18,
+    "class_id": 23
+  },
+  {
+    "skill_id": 18,
+    "class_id": 25
+  },
+  {
+    "skill_id": 18,
+    "class_id": 9
+  },
+  {
+    "skill_id": 18,
+    "class_id": 26
+  },
+  {
+    "skill_id": 18,
+    "class_id": 6
+  },
+  {
+    "skill_id": 18,
+    "class_id": 24
+  },
+  {
+    "skill_id": 18,
+    "class_id": 33
+  },
+  {
+    "skill_id": 19,
+    "class_id": 12
+  },
+  {
+    "skill_id": 19,
+    "class_id": 1
+  },
+  {
+    "skill_id": 19,
+    "class_id": 3
+  },
+  {
+    "skill_id": 19,
+    "class_id": 10
+  },
+  {
+    "skill_id": 19,
+    "class_id": 2
+  },
+  {
+    "skill_id": 19,
+    "class_id": 5
+  },
+  {
+    "skill_id": 19,
+    "class_id": 14
+  },
+  {
+    "skill_id": 19,
+    "class_id": 15
+  },
+  {
+    "skill_id": 19,
+    "class_id": 20
+  },
+  {
+    "skill_id": 19,
+    "class_id": 21
+  },
+  {
+    "skill_id": 19,
+    "class_id": 22
+  },
+  {
+    "skill_id": 19,
+    "class_id": 33
+  },
+  {
+    "skill_id": 20,
+    "class_id": 7
+  },
+  {
+    "skill_id": 20,
+    "class_id": 12
+  },
+  {
+    "skill_id": 20,
+    "class_id": 1
+  },
+  {
+    "skill_id": 20,
+    "class_id": 3
+  },
+  {
+    "skill_id": 20,
+    "class_id": 11
+  },
+  {
+    "skill_id": 20,
+    "class_id": 13
+  },
+  {
+    "skill_id": 20,
+    "class_id": 2
+  },
+  {
+    "skill_id": 20,
+    "class_id": 5
+  },
+  {
+    "skill_id": 20,
+    "class_id": 14
+  },
+  {
+    "skill_id": 20,
+    "class_id": 15
+  },
+  {
+    "skill_id": 21,
+    "class_id": 7
+  },
+  {
+    "skill_id": 21,
+    "class_id": 12
+  },
+  {
+    "skill_id": 21,
+    "class_id": 1
+  },
+  {
+    "skill_id": 21,
+    "class_id": 3
+  },
+  {
+    "skill_id": 21,
+    "class_id": 10
+  },
+  {
+    "skill_id": 21,
+    "class_id": 11
+  },
+  {
+    "skill_id": 21,
+    "class_id": 13
+  },
+  {
+    "skill_id": 21,
+    "class_id": 2
+  },
+  {
+    "skill_id": 21,
+    "class_id": 5
+  },
+  {
+    "skill_id": 21,
+    "class_id": 4
+  },
+  {
+    "skill_id": 21,
+    "class_id": 14
+  },
+  {
+    "skill_id": 21,
+    "class_id": 15
+  },
+  {
+    "skill_id": 21,
+    "class_id": 18
+  },
+  {
+    "skill_id": 21,
+    "class_id": 16
+  },
+  {
+    "skill_id": 21,
+    "class_id": 17
+  },
+  {
+    "skill_id": 21,
+    "class_id": 19
+  },
+  {
+    "skill_id": 21,
+    "class_id": 20
+  },
+  {
+    "skill_id": 21,
+    "class_id": 21
+  },
+  {
+    "skill_id": 21,
+    "class_id": 22
+  },
+  {
+    "skill_id": 21,
+    "class_id": 23
+  },
+  {
+    "skill_id": 21,
+    "class_id": 25
+  },
+  {
+    "skill_id": 21,
+    "class_id": 9
+  },
+  {
+    "skill_id": 21,
+    "class_id": 26
+  },
+  {
+    "skill_id": 21,
+    "class_id": 6
+  },
+  {
+    "skill_id": 21,
+    "class_id": 24
+  },
+  {
+    "skill_id": 21,
+    "class_id": 33
+  },
+  {
+    "skill_id": 22,
+    "class_id": 12
+  },
+  {
+    "skill_id": 22,
+    "class_id": 1
+  },
+  {
+    "skill_id": 22,
+    "class_id": 3
+  },
+  {
+    "skill_id": 22,
+    "class_id": 10
+  },
+  {
+    "skill_id": 22,
+    "class_id": 11
+  },
+  {
+    "skill_id": 22,
+    "class_id": 13
+  },
+  {
+    "skill_id": 22,
+    "class_id": 2
+  },
+  {
+    "skill_id": 22,
+    "class_id": 5
+  },
+  {
+    "skill_id": 22,
+    "class_id": 14
+  },
+  {
+    "skill_id": 22,
+    "class_id": 15
+  },
+  {
+    "skill_id": 22,
+    "class_id": 20
+  },
+  {
+    "skill_id": 22,
+    "class_id": 21
+  },
+  {
+    "skill_id": 22,
+    "class_id": 22
+  },
+  {
+    "skill_id": 23,
+    "class_id": 7
+  },
+  {
+    "skill_id": 23,
+    "class_id": 12
+  },
+  {
+    "skill_id": 23,
+    "class_id": 1
+  },
+  {
+    "skill_id": 23,
+    "class_id": 3
+  },
+  {
+    "skill_id": 23,
+    "class_id": 10
+  },
+  {
+    "skill_id": 23,
+    "class_id": 11
+  },
+  {
+    "skill_id": 23,
+    "class_id": 13
+  },
+  {
+    "skill_id": 23,
+    "class_id": 2
+  },
+  {
+    "skill_id": 23,
+    "class_id": 5
+  },
+  {
+    "skill_id": 23,
+    "class_id": 4
+  },
+  {
+    "skill_id": 23,
+    "class_id": 14
+  },
+  {
+    "skill_id": 23,
+    "class_id": 15
+  },
+  {
+    "skill_id": 23,
+    "class_id": 18
+  },
+  {
+    "skill_id": 23,
+    "class_id": 16
+  },
+  {
+    "skill_id": 23,
+    "class_id": 17
+  },
+  {
+    "skill_id": 23,
+    "class_id": 19
+  },
+  {
+    "skill_id": 23,
+    "class_id": 20
+  },
+  {
+    "skill_id": 23,
+    "class_id": 21
+  },
+  {
+    "skill_id": 23,
+    "class_id": 22
+  },
+  {
+    "skill_id": 23,
+    "class_id": 23
+  },
+  {
+    "skill_id": 23,
+    "class_id": 25
+  },
+  {
+    "skill_id": 23,
+    "class_id": 9
+  },
+  {
+    "skill_id": 23,
+    "class_id": 26
+  },
+  {
+    "skill_id": 23,
+    "class_id": 6
+  },
+  {
+    "skill_id": 23,
+    "class_id": 24
+  },
+  {
+    "skill_id": 23,
+    "class_id": 33
+  },
+  {
+    "skill_id": 25,
+    "class_id": 30
+  },
+  {
+    "skill_id": 25,
+    "class_id": 31
+  },
+  {
+    "skill_id": 25,
+    "class_id": 32
+  },
+  {
+    "skill_id": 25,
+    "class_id": 33
   }
 ]

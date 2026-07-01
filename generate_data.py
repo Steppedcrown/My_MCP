@@ -615,13 +615,14 @@ Fetch the relevant wiki pages now, then return the complete JSON array:"""
     messages = [{"role": "user", "content": prompt}]
 
     while True:
-        response = client.messages.create(
+        with client.messages.stream(
             model=MODEL,
             max_tokens=max_tokens,
             system=GENERATOR_SYSTEM,
             tools=[FETCH_TOOL],
             messages=messages,
-        )
+        ) as stream:
+            response = stream.get_final_message()
 
         if response.stop_reason == "tool_use":
             messages.append({"role": "assistant", "content": response.content})
@@ -721,7 +722,13 @@ def process_table(
         print(f"\n  Attempt {attempt}/{max_retries}")
 
         print("  Generating data (fetching wiki)...")
-        data = generate_data(table, existing_data)
+        try:
+            data = generate_data(table, existing_data)
+        except (json.JSONDecodeError, ValueError) as exc:
+            print(f"  Parse error: {exc}")
+            if attempt < max_retries:
+                print("  Retrying...")
+            continue
         print(f"  Generated {len(data)} records")
 
         print("  Validating...")

@@ -1,34 +1,170 @@
 [
   {
     "spell_id": 1,
-    "class_id": 15
+    "class_id": 28
   },
   {
     "spell_id": 2,
-    "class_id": 15
+    "class_id": 28
   },
   {
     "spell_id": 3,
-    "class_id": 14
+    "class_id": 28
   },
   {
     "spell_id": 4,
-    "class_id": 15
+    "class_id": 28
   },
   {
     "spell_id": 5,
-    "class_id": 15
+    "class_id": 28
   },
   {
     "spell_id": 6,
-    "class_id": 15
+    "class_id": 28
   },
   {
     "spell_id": 7,
-    "class_id": 15
+    "class_id": 28
   },
   {
     "spell_id": 8,
-    "class_id": 15
+    "class_id": 28
+  },
+  {
+    "spell_id": 9,
+    "class_id": 28
+  },
+  {
+    "spell_id": 10,
+    "class_id": 28
+  },
+  {
+    "spell_id": 11,
+    "class_id": 28
+  },
+  {
+    "spell_id": 12,
+    "class_id": 28
+  },
+  {
+    "spell_id": 13,
+    "class_id": 28
+  },
+  {
+    "spell_id": 14,
+    "class_id": 28
+  },
+  {
+    "spell_id": 15,
+    "class_id": 29
+  },
+  {
+    "spell_id": 16,
+    "class_id": 29
+  },
+  {
+    "spell_id": 17,
+    "class_id": 29
+  },
+  {
+    "spell_id": 18,
+    "class_id": 29
+  },
+  {
+    "spell_id": 19,
+    "class_id": 29
+  },
+  {
+    "spell_id": 20,
+    "class_id": 29
+  },
+  {
+    "spell_id": 21,
+    "class_id": 29
+  },
+  {
+    "spell_id": 22,
+    "class_id": 29
+  },
+  {
+    "spell_id": 23,
+    "class_id": 29
+  },
+  {
+    "spell_id": 24,
+    "class_id": 29
+  },
+  {
+    "spell_id": 25,
+    "class_id": 29
+  },
+  {
+    "spell_id": 26,
+    "class_id": 29
+  },
+  {
+    "spell_id": 27,
+    "class_id": 29
+  },
+  {
+    "spell_id": 28,
+    "class_id": 29
+  },
+  {
+    "spell_id": 29,
+    "class_id": 29
+  },
+  {
+    "spell_id": 30,
+    "class_id": 29
+  },
+  {
+    "spell_id": 31,
+    "class_id": 29
+  },
+  {
+    "spell_id": 32,
+    "class_id": 29
+  },
+  {
+    "spell_id": 33,
+    "class_id": 29
+  },
+  {
+    "spell_id": 34,
+    "class_id": 29
+  },
+  {
+    "spell_id": 35,
+    "class_id": 29
+  },
+  {
+    "spell_id": 36,
+    "class_id": 29
+  },
+  {
+    "spell_id": 37,
+    "class_id": 29
+  },
+  {
+    "spell_id": 38,
+    "class_id": 29
+  },
+  {
+    "spell_id": 39,
+    "class_id": 29
+  },
+  {
+    "spell_id": 40,
+    "class_id": 29
+  },
+  {
+    "spell_id": 41,
+    "class_id": 29
+  },
+  {
+    "spell_id": 42,
+    "class_id": 29
   }
 ]
