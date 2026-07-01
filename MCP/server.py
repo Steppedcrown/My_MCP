@@ -2,9 +2,17 @@ import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+import os
+
 import httpx
 from mcp.server.fastmcp import FastMCP
-from VectorDB.search import semantic_search as _semantic_search, VALID_ENTITY_TYPES
+
+_VECTORDB_ENABLED = os.environ.get("VECTORDB_ENABLED", "").lower() in ("1", "true", "yes")
+if _VECTORDB_ENABLED:
+    from VectorDB.search import semantic_search as _semantic_search, VALID_ENTITY_TYPES
+else:
+    _semantic_search = None
+    VALID_ENTITY_TYPES = set()
 
 mcp = FastMCP("elden-ring-mcp")
 _API = "http://localhost:8000"
@@ -392,6 +400,8 @@ def semantic_search(query: str, entity_type: str = "", n_results: int = 5) -> li
     entity_type, entity_id, title, document (text used for embedding), and
     any extra metadata (runes, fp_cost, etc.).
     """
+    if not _VECTORDB_ENABLED or _semantic_search is None:
+        return [{"error": "Vector search is disabled. Set VECTORDB_ENABLED=1 to enable it."}]
     n_results = min(max(1, n_results), 20)
     return _semantic_search(query, entity_type=entity_type, n_results=n_results)
 
