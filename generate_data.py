@@ -535,6 +535,8 @@ JUNCTION_TABLES = [
 def parse_json(text: str):
     """Extract and parse a JSON array or object from an LLM response."""
     text = text.strip()
+    if not text:
+        raise ValueError("Model returned an empty response — no JSON to parse")
     if text.startswith("```"):
         text = text.split("\n", 1)[1]
         text = text.rsplit("```", 1)[0].strip()
@@ -549,7 +551,12 @@ def parse_json(text: str):
                     depth -= 1
                 if depth == 0:
                     return json.loads(text[i : j + 1])
-    return json.loads(text)
+            # Found an opening bracket but no matching close — response is truncated
+            raise ValueError(
+                f"JSON is truncated: found '{ch}' at position {i} but no matching "
+                f"'{close}'. The response was likely cut off mid-output."
+            )
+    raise ValueError(f"No JSON array or object found in response. Got: {text[:200]!r}")
 
 
 def load_existing_data() -> dict[str, list[dict]]:
@@ -648,6 +655,12 @@ Fetch the relevant wiki pages now, then return the complete JSON array:"""
             messages.append({"role": "user", "content": tool_results})
 
         else:
+            if response.stop_reason == "max_tokens":
+                raise ValueError(
+                    f"Response hit the max_tokens limit ({max_tokens}) — JSON is "
+                    "likely truncated. Increase max_tokens for this table or reduce "
+                    "the number of records requested."
+                )
             text = next((b.text for b in response.content if b.type == "text"), "")
             return parse_json(text)
 
